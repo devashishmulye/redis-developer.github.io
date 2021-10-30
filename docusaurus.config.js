@@ -34,7 +34,9 @@ module.exports = {
       trackingID: 'GTM-W8Z6BLQ',
     },
     prism : {
-      additionalLanguages: ['csharp', 'php', 'ruby']
+      additionalLanguages: ['csharp', 'php', 'ruby','kotlin','java','groovy'],
+      // theme: require("prism-react-renderer/themes/okaidia"),
+      // darkTheme: require("prism-react-renderer/themes/dracula"),
 
     },
 
