@@ -17,7 +17,7 @@ module.exports = {
         name: 'Simon Prickett',
         link: 'https://twitter.com/simon_prickett',
         title: 'Manager, Developer Advocacy',
-        image: 'profile_pic_simon_prickett.jpg'
+        image: '/Users/finboxuser1/devashishwork/redis-developer.github.io/src/public/FinBox Dark logo@2x.png'
       },
       suze: {
         name: 'Suze Shardlow',
@@ -45,7 +45,7 @@ module.exports = {
       title: null,
       logo: {
         alt: 'FinBox',
-        src: 'img/logo-1.png',
+        src: '/src/public/FinBoxLight.png',
       },
       hideOnScroll: false,
       items: [
