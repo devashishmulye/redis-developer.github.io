@@ -45,8 +45,8 @@ module.exports = {
     'Embedded Finance': [
       {
         type: 'link',
-        label: 'Embedded Finance',
-        href: '/',
+        label: 'Documentation Home Page',
+        href: '/docs',
       },
       'embedded-finance/introduction',
       'embedded-finance/overview',
