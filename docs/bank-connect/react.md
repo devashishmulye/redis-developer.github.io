@@ -22,7 +22,7 @@ The video below shows a user submit bank statement by uploading the PDF file:
 
 ## Integration Workflow
 The diagram below illustrates the integration workflow in a nutshell:
-<img src="/src/public/client_sdk.jpg" alt="Client SDK Workflow" />
+<img src="/img/client_sdk.jpg" alt="Client SDK Workflow" />
 
 ## Sample Project
 We have hosted a sample project on GitHub, you can check it out here:
