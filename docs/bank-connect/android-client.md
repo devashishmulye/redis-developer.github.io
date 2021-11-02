@@ -185,7 +185,7 @@ implementation ('in.finbox:logger:<LOGGER_SDK_VERSION>:parent-release@aar') {
 </Tabs>
 
 
-::: warning NOTE
+:::warning NOTE
 Following will be shared by FinBox team at the time of integration:
 - `ACCESS_KEY`
 - `SECRET_KEY`
@@ -257,7 +257,7 @@ new FinBoxBankConnect.Builder(getApplicationContext())
 
 Once the above statement is added, a series of checks are done to make sure the SDK is implemented correctly. A `RunTimeException` will be thrown while trying to build the project in case any of the checks are not completed.
 
-::: warning Minimal Requirements for SDK to work:
+:::warning Minimal Requirements for SDK to work:
 1. `apiKey` is is mandatory
 2. `linkId` is mandatory, and should be at least 8 characters long
 3. In case `fromDate` / `toDate` is provided, make sure they are of correct date format: `dd/MM/yyyy`.

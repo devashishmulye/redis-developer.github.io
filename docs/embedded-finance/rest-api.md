@@ -35,7 +35,7 @@ On failure, response will have `status` key as `false`, and `error` will hold th
 
 ## Create User
 This API creates a FinBox lending user for a given customer ID.
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/user/create**
 :::
 
@@ -71,7 +71,7 @@ This API checks for a user's eligibility and returns the eligible amount. Partne
 
 <img src="https://finbox-cdn.s3.ap-south-1.amazonaws.com/prequalification_illustration.png" alt="Prequalification API Workflow" />
 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/user/eligibility?customerID=`somecustomerid`**
 :::
 
@@ -98,12 +98,12 @@ Here `is_eligible` is a **boolean** indicating whether the user is eligible or n
 ## Generate Token
 This API can be called multiple times for an eligible user, and is used to get a valid token that can be used by the Android App to initialize the SDK.
 
-::: warning Token Validity
+:::warning Token Validity
 - In case of **production** environment, the token is valid for **24 hours** and in **UAT** it is valid for **1 week**.
 - It is recommended to call this API everytime user clicks on the banner on app, so that a fresh token is issued for the user session everytime.
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/user/token**
 :::
 
@@ -133,12 +133,12 @@ Here `token` field indicates the token.
 | User eligibility not available | 400 |
 | User not eligible for loan | 403 |
 
-::: warning Tracking Source
+:::warning Tracking Source
 In case you are using same API key across different platforms, and want to track the source of the user, also pass a string field `source` in the request body, indicating a unique source from which the user is accessing the SDK from.
 :::
 ## List Users
 Lists all the users created from a given sourcing entity's account. It's a paginated API.
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/users?limit=`totalRecords`&page=`numPages`**
 :::
 
@@ -184,7 +184,7 @@ Different values of user status can be found in [Appendix](/middleware/appendix.
 
 ## User Profile
 Returns the profile of the user against a `customerID`
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/user/profile?customerID=`someCustomerID`**
 :::
 
@@ -215,7 +215,7 @@ GET **`base_url`/v1/user/profile?customerID=`someCustomerID`**
 
 ## List Loans
 Lists all the loan applications created from a given sourcing entity's account. It's a paginated API.
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/loans?limit=`totalRecords`&page=`numPages`**
 :::
 
@@ -262,7 +262,7 @@ Different values of loan status can be found in [Appendix](/middleware/appendix.
 
 ## Loan Details
 Returns the details of a given loan application.
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/loan/details?loanApplicationID=`someLongLoanApplicationUUID`**
 :::
 
@@ -331,11 +331,11 @@ Most of the parameters of the response are self-explainatory. Some key fields ar
 ## Loan Offers
 Returns the loan offers made to a given loan application.
 
-::: warning NOTE
+:::warning NOTE
 Loan Offers API works only once loan is **approved**
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/loan/offers?loanApplicationID=`someLongLoanApplicationUUID`**
 :::
 
@@ -406,12 +406,12 @@ Response fields are explained below:
 ## Get Signed Agreement
 Returns the presigned url for signed agreement PDF File
 
-::: warning NOTE
+:::warning NOTE
 - This API works only after `loan_signed_agreement_generated` event has been triggered
 - The presigned URL in response is valid for 300 seconds
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/loan/agreement?loanApplicationID=`someLongLoanApplicationUUID`**
 :::
 
@@ -428,11 +428,11 @@ GET **`base_url`/v1/loan/agreement?loanApplicationID=`someLongLoanApplicationUUI
 ## Loan Repayments
 Returns the repayments information for a given loan application.
 
-::: warning NOTE
+:::warning NOTE
 Loan Repayments API works only after loan **disbursal**.
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/loan/repayments?loanApplicationID=`someLongLoanApplicationUUID`**
 :::
 
@@ -537,11 +537,11 @@ EDI Keys:
 ## Repay Loan
 Marks the repayment of a given loan EMI
 
-::: warning NOTE
+:::warning NOTE
 This API is **disabled** by default. If required, request FinBox team to enable this API.
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/loan/repay**
 :::
 
@@ -571,7 +571,7 @@ POST **`base_url`/v1/loan/repay**
 ## Credit Line Details
 Returns credit line details for a given user using the `customerID`
 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/creditline/details?customerID=`someCustomerID`**
 :::
 
@@ -719,12 +719,12 @@ Array of objects in `emis` will be empty in case of `CANCELLED` and `PROCESSING`
 ## Confirm Credit Line Transaction
 Confirms Credit Line Transaction in processing state
 
-::: warning NOTE
+:::warning NOTE
 1. This API's request format is specific to e-commerce use case, and is disabled by default for clients with a different use case.
 2. For other use cases, FinBox team will share a different API for updating the status.
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/creditline/txn/confirm**
 :::
 
@@ -766,7 +766,7 @@ On successful updating the status, API will give a response with 200 HTTP status
 ## Cancel Credit Line Transaction
 Cancels Credit Line Transaction in processing state
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/creditline/txn/cancel**
 :::
 
@@ -792,12 +792,12 @@ On successful updating the status, API will give a response with 200 HTTP status
 ## Split Credit Line Transaction
 Splits Credit Line Transaction in processing state into different transactions. Useful when same order has different invoices, shipment or deliveries. After splitting, each transaction can further be splitted or moved to cancelled / confirmed state. 
 
-::: warning NOTE
+:::warning NOTE
 1. This API's request format is specific to e-commerce use case, and is disabled by default for clients with a different use case.
 2. For other use cases if this is required, FinBox team will share a different API.
 :::
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/creditline/txn/split**
 :::
 
@@ -820,7 +820,7 @@ POST **`base_url`/v1/creditline/txn/split**
 
 On successful updating the status, API will give a response with 200 HTTP status code.
 
-::: warning NOTE
+:::warning NOTE
 1. Please make sure sum of amounts add up to the original transaction amount being split
 2. API will throw an error if total amount exceeds the original transaction amount being split
 3. In case sum of amounts is less than original transaction amount, another transaction with no invoiceNo and left over amount will be created, and split will proceed
@@ -838,7 +838,7 @@ On successful updating the status, API will give a response with 200 HTTP status
 
 ## User Activity History
 Returns the activity 
-::: tip Endpoint
+:::tip Endpoint
 GET **`base_url`/v1/user/activity?customerID=`someCustomerID`**
 :::
 

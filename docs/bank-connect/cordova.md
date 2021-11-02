@@ -34,7 +34,7 @@ The video below shows a user submit bank statement by uploading the PDF file:
 ## Start BankConnect journey
 Call `openBankConnect` method using the `FinBoxBankConnectPlugin` instance to open BankConnect journey. It takes `LINK_ID` as one of its arguments which is a unique identifier for a user.
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 1. Please make sure `LINK_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 2. By default the SDK will request for 6 months data. In order to pass custom date range make use of these params `FROM_DATE` & `TO_DATE`.
 3. `FROM_DATE` & `TO_DATE` should be of the format `dd/MM/yyyy`. And `TO_DATE` should *NOT* be todays date

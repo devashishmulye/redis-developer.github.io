@@ -19,7 +19,7 @@ for account in accounts:
     print(account)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -80,7 +80,7 @@ for fraud_dict in fraud_list_iter:
     print(fraud_dict)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -128,7 +128,7 @@ for transaction in transactions:
     print(transaction)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -211,7 +211,7 @@ for salary_dict in salary_iter:
     print(salary_dict)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -290,7 +290,7 @@ for debit_recurr_dict in debit_recurring:
     print(debit_recurr_dict)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -371,7 +371,7 @@ for lender_transaction in lender_transactions:
     print(lender_transaction)
 ```
 
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 

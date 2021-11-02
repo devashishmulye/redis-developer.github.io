@@ -24,7 +24,7 @@ In case wrong/incomplete/no keys were passed in headers, response will have **40
 ## Net Banking Health
 This API can be used to check Health status for banks in Net Banking mode.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/net_banking_health/**
 :::
 
@@ -61,7 +61,7 @@ On successful fetching, the API gives a **200 HTTP code** with following respons
 ## Get PDFs
 This API can be used to fetch statement PDF files for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/get_pdfs/**
 :::
 
@@ -102,7 +102,7 @@ Here, `statements` key will contain a list of statements for the given entity. E
 ## List Entities
 Lists all entities (paginated) created under your account.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/**
 :::
 
@@ -138,7 +138,7 @@ On successful fetching, the API gives a **200 HTTP code** with following respons
 ```
 `count` here indicates the total number of entities, `next` and `previous` have URLs for next and previous pages respectively. If no page exists, they store `null` as value.
 
-::: warning NOTE
+:::warning NOTE
 - There are **10 records** per page at max
 - This API can also be used to fetch Entity ID for a given Link ID
 :::
@@ -146,7 +146,7 @@ On successful fetching, the API gives a **200 HTTP code** with following respons
 ## Getting Link ID from Entity ID
 If required you can fetch `link_id` from an `entity_id` using the API below:
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/**
 :::
 
@@ -164,6 +164,6 @@ On successful fetching, the API gives a **200 HTTP code** with following respons
 ```
 In case no `link_id` exists for the given entity, the value of `link_id` comes as `null` in response.
 
-::: danger Not Found
+:::danger Not Found
 In case no entity with the provided `entity_id` exists, the API will return a response with **404 (Not Found) error code**.
 :::

@@ -81,7 +81,7 @@ In case your webhook endpoint is down or a webhook call was failed, you can have
 
 In case you just have the `link_id` you can also request for all the webhook payloads for a given `link_id` using the following API:
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/webhook_payloads/?link_id=`link_id`**
 :::
 

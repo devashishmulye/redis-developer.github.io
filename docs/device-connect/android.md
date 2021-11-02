@@ -175,7 +175,7 @@ implementation ('in.finbox:logger:<LOGGER_SDK_VERSION>:parent-release@aar') {
 </TabItem>
 </Tabs>
 
-::: warning NOTE
+:::warning NOTE
 Following will be shared by FinBox team at the time of integration:
 - `ACCESS_KEY`
 - `SECRET_KEY`
@@ -191,7 +191,7 @@ Following will be shared by FinBox team at the time of integration:
 
 Call `createUser` method to create the user. It takes Client Api Key and Customer Id as the arguments.
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 Please make sure `CUSTOMER_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 :::
 
@@ -336,7 +336,7 @@ finBox.setDeviceMatch(deviceMatch);
 </TabItem>
 </Tabs>
 
-::: tip TIP
+:::tip TIP
 For Device Match to work at full potential, the SDK expects `android.permission.READ_CONTACTS`, `android.permission.GET_ACCOUNTS`, `android.permission.READ_SMS` to be accepted by the user.
 :::
 

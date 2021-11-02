@@ -286,7 +286,7 @@ implementation('in.finbox:bankconnect:<BC_SDK_VERSION>:release@aar') {
 </TabItem>
 </Tabs>
 
-::: tip Note
+:::tip Note
 The following keys will be shared over an email
 - `ACCESS_KEY`
 - `SECRET_KEY`
@@ -351,7 +351,7 @@ proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pr
 Once all dependencies are added, SDK requires 3 inputs: `CUSTOMER_ID`, `USER_TOKEN` and `CLIENT_API_KEY`.
 `ENVIRONMENT` is an optional field. Default value of environment is `PROD`.
 
-::: tip Note
+:::tip Note
 `USER_TOKEN` needs to be generated against a `CUSTOMER_ID` on backend before starting the SDK. Refer [here](/middleware/sourcing-rest-api.html#generate-token)
 
 `ENVIRONMENT` needs to be updated to `PROD` when migrating application to production.
@@ -587,8 +587,9 @@ FinBoxJourneyResult has the following values:
 - `message`: Any additional message to describe the resultCode
 
 Possible values for `resultCode` are as follows:
+
 | Result Code | Description |
-| - | - | - |
+| - | - |
 | `MW200` | Journey is completed successfully |
 | `MW500` | User exits the journey |
 | `MW400` | Some error occurred in the SDK |
@@ -596,8 +597,9 @@ Possible values for `resultCode` are as follows:
 | `CL500` | Credit line withdrawal failed |
 
 Possible values for `screen` are as follows:
+
 | Screen | Description |
-| - | - | - |
+| - | - |
 | `Launcher` | The base screen (Hidden Activity) |
 | `Permissions` | Permission list screen |
 | `Profile` | Basic profile screen |
@@ -757,7 +759,7 @@ class SampleMessService extends FirebaseMessagingService implements FinBoxLendin
 <string name="finbox_lending_privacy_policy_url">https://finbox.in/about/privacy</string>
 ```
 
-::: tip Note
+:::tip Note
 Make sure the value passed is a valid URL
 :::
 

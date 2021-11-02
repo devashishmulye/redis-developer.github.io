@@ -29,7 +29,7 @@ fbc.api_key = "YOUR_API_KEY"
 ## `Entity` class
 The python package will provide you with an `Entity` class, all actions like uploading or fetching information will be done using an instance of this `Entity` class.
 
-::: warning Creating Entity Instance
+:::warning Creating Entity Instance
 Instance of `Entity` can be created only via static methods: `get` and `create`, not by constructor.
 :::
 
@@ -46,7 +46,7 @@ In case you want to create an entity instance with a `link_id`, you can also pro
 entity = fbc.Entity.create(link_id="YOUR_LINK_ID")
 ```
 
-::: warning Lazy operations
+:::warning Lazy operations
 This python package uses a lazy approach for actions, hence an actual Entity on the server will not get created until or unless some action is taken, for example uploading statement. This is also true for fetching as well until data is requested, no request over the network will be made even though you defined an entity instance.
 :::
 
@@ -154,7 +154,7 @@ It returns the identity `dict` for the last uploaded / updated account within th
     "name": "Name Extracted"
 }
 ```
-::: warning NOTE
+:::warning NOTE
 If the value was not previously retrieved, it will poll and check for progress, and then fetch and cache the retrieved value for next usage.
 :::
 
@@ -187,7 +187,7 @@ Other than `api_key`, following values can also be modified globally as per requ
 | `api_version` | To set the API version to use | {{$page.frontmatter.version}} |
 | `base_url` | In case you are using a proxy and want to change the base url for REST API calls that python library makes | {{$page.frontmatter.base_url}} |
 
-::: danger Changing base_url property
+:::danger Changing base_url property
 In case you are using a proxy, and changed the `base_url` property, just keep in mind that the library will internally make an API call in the following format:
 
 `base_url`/bank-connect/`api_version`/`<endpoints>`

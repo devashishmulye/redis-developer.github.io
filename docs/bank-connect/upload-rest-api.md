@@ -50,7 +50,7 @@ This section lists the endpoint and request format for upload APIs that accepts 
 
 ### Bank name is known
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/upload/?identity=true**
 :::
 
@@ -70,7 +70,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 
 In case you don't know bank name, and want BankConnect to automatically identify the bank name:
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/bankless_upload/?identity=true**
 :::
 
@@ -90,7 +90,7 @@ This section lists the endpoint and request format for upload APIs that accepts 
 
 ### Bank name known
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/upload_base64/?identity=true**
 :::
 
@@ -110,7 +110,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 
 In case you don't know bank name, and want BankConnect to automatically identify the bank name:
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/bankless_upload_base64/?identity=true**
 :::
 
@@ -130,7 +130,7 @@ This section lists the endpoint and request format for upload APIs that accepts 
 
 ### Bank name known
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/upload/?identity=true**
 :::
 
@@ -150,7 +150,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 
 In case you don't know bank name, and want BankConnect to automatically identify the bank name:
 
-::: tip Endpoint
+:::tip Endpoint
 POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/statement/bankless_upload/?identity=true**
 :::
 
@@ -211,7 +211,7 @@ The identity information returned in the response can be used to verify the cust
 | name | string | name of the bank account holder |
 | status | integer | contains the status code for API, should be 1 for success. Other possible values are listed in Bad Requests(/bank-connect/upload-rest-api.html#bad-request-cases) section |
 
-::: warning NOTE
+:::warning NOTE
 - `fraud_type` field is `null` in case `is_fraud` field is false, otherwise it is a string. Please refer to [Fraud](/bank-connect/fraud.html) section to know more about it.
 - Some of the fields within the identity dictionary, or the `from_date` and `to_date` maybe `null` for few statements depending on the bank statement format and what all information is present on the top of the statement. The `from_date` and the `to_date` in case are returned as `null`, are updated for the statement at a later stage when transactions are extracted.
 - The query parameter `?identity=true` is optional for both the APIs above, if not specified the response will only include `entity_id`, `statement_id` and `bank_name` fields in case of successful upload.
@@ -232,7 +232,7 @@ In case of successful upload, you'll get the `status` field value as `1`. Follow
 | Non Parsable PDF - PDF file is corrupted or has no selectable text (only scanned images) | 400 | 6 | `{"entity_id": "some_long_uuid4", "message": "PDF is not parsable", "status": 6}` |
 | Balance, date and amount columns are not present in the statement | 400 | 7 | `{"entity_id": "some_long_uuid4", "message": "Unsupported Bank Statement Format. It should have balance, date and amount columns.", "status": 7}` |
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 - We do not support scanned PDF images, if uploaded we throw a **400 HTTP Code** with the `status` as `6`
 - In case a valid PDF comes as an input, and we are not able to extract information from it, API will give a **200 HTTP Code** but will have **identity** information in response as `null`. Our quality team takes care of such cases, and new templates are added within 24 hours.
 - In case you are in **DEV** environment and your **trial period has expired**, then upload APIs will give you a response with **402 HTTP Code**. To fix this please request FinBox to upgrade your plan.

@@ -23,7 +23,7 @@ Now everytime user initiates/resumes their lending journey by clicking on a bann
 ## Session API
 To start with the integration, call the following API to create a user session:
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/user/session**
 :::
 
@@ -38,16 +38,16 @@ This API require a **Server API Key** to be passed in `x-api-key` **header**. Th
 }
 ```
 
-::: warning NOTE
+:::warning NOTE
 - Once the user exits the loan journey at any point, the SDK will redirect to the above specified URL
 - Make sure this API is called only when the user is created and eligibility is fetched.
 :::
 
-::: warning Tracking Source
+:::warning Tracking Source
 In case you are using same API key across different platforms, and want to track the source of the user, also pass a string field `source` in the request body, indicating a unique source from which the user is accessing the SDK from.
 :::
 
-::: warning Hide Close Button
+:::warning Hide Close Button
 In case you want to hide the close button from the sdk navbar you can pass a boolean field `hideClose` with value `true`.
 ```json
 {
@@ -93,7 +93,7 @@ We support DeviceConnect integration for the following platforms. Please refer t
 ## Credit Line
 In case of credit line, once the lending journey is completed, user can opt-in for a credit while doing a transaction.For such a case use the **Session API** with two extra inputs `withdrawAmount` and `transactionID`.
 
-::: tip Endpoint
+:::tip Endpoint
 POST **`base_url`/v1/user/session**
 :::
 

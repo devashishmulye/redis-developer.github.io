@@ -6,7 +6,7 @@ sidebar_label: Fetching data by REST APIs
 
 FinBox DeviceConnect REST API enables **"server to server data"** fetching of customers' Android device data. The customer's data can be fetched using the `CUSTOMER_ID`. API accepts JSON-encoded request bodies, returns JSON-encoded responses.
 
-::: warning NOTE
+:::warning NOTE
 Following will be shared by FinBox team at the time of integration:
 - `SERVER_API_KEY`
 - `SERVER_HASH`
@@ -37,7 +37,7 @@ Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predicto
 
 ## Insights API Endpoints
 
-::: tip Base URL
+:::tip Base URL
 For all the endpoints, the base URL for different environments are as follows: 
 | Environment | Base URL |
 | - | - | -| - |
@@ -49,7 +49,7 @@ For all the endpoints, the base URL for different environments are as follows:
 | - | - | -| - |
 | General Predictors | **/risk/predictors** | POST | General features extracted from customer's data |
 
-::: tip Predictors
+:::tip Predictors
 Other than general predictors, there are also more predictor endpoints which will be shared based on the  requirement by the FinBox team.
 :::
 
@@ -113,11 +113,11 @@ API will give a JSON Response with the following keys:
 | date_processed | Timestamp of processing completion | STRING with `YYYY-MM-DDThh:mm:ss:mil` format | Yes |
 | data | An array of objects, each object representing the predictors, having keys `name` indicating the predictor name and `value` indicating the values | JSON | Yes |
 
-::: danger data key
+:::danger data key
 The list of predictors in the `data` key will be different based on the result API endpoint, feature set version and requester. This **list will hence be shared separately** by the FinBox team during the integration.
 :::
 
-::: warning NOTE
+:::warning NOTE
 Some of the keys in response may be missing based on the availability of data and HTTP Status code. Please refer to examples for each of the cases listed [here](/device-connect/rest-api.html#status-values).
 :::
 
@@ -136,7 +136,7 @@ Depending on the availability of data, there can be different cases with differe
 | [Internal Server Error](/device-connect/rest-api.html#case-6-unauthorized) | `"error"` | 5xx | The request processing failed because of some internal error. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. If the issue persists, please contact support |
 | [Rate Limit Exceeded](/device-connect/rest-api.html#case-8-rate-limit-exceeded) | `"error"` | 429 | This happens in case the maximum allowed rate limit on API exceeds. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. Contact FinBox to know your rate limits.|
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 In case your are running a daily CRON that fetches data using insights API, ensure you are not breaching the rate limit. Please contact FinBox to know your rate limits.
 :::
 

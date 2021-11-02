@@ -56,7 +56,7 @@ Sample `progress` value:
 ]
 ```
 
-::: warning TIP
+:::warning TIP
 A general rule of thumb would be to make sure all objects in the `progress` field have their `status` as `completed`, by polling the required analysis field API in intervals. As soon as all statuses are `completed`, the same API will give the correct required values.
 
 It is to be noted that `status` for all different analysis APIs are separate, that is identity and progress might have different statuses for the document, depending on whichever is taking less or more time. So make sure to check the status for each of the analysis API before trying to use the extracted values.
@@ -99,7 +99,7 @@ Sample `fraud` field value:
 ## List Accounts
 Lists accounts under a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/accounts/**
 :::
 
@@ -175,7 +175,7 @@ The response has the following fields:
 ## Identity
 Lists extracted identities for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/identity/**
 :::
 
@@ -253,7 +253,7 @@ The response fields are the same as in [List Accounts](/bank-connect/rest-api.ht
 ## Transactions
 Get extracted and enriched transactions for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/transactions/**
 :::
 
@@ -344,7 +344,7 @@ The response fields are the same as in [List Accounts](/bank-connect/rest-api.ht
 ## Salary
 Get extracted salary transactions for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/salary/**
 :::
 
@@ -452,7 +452,7 @@ The response fields are the same as in [List Accounts](/bank-connect/rest-api.ht
 ## Recurring Transactions
 Get extracted recurring transactions for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/recurring_transactions/**
 :::
 
@@ -612,7 +612,7 @@ Each of the recurring transaction set object has the following fields:
 ## Lender Transactions
 Get extracted lender transactions for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/lender_transactions/**
 :::
 
@@ -714,7 +714,7 @@ The response fields are the same as in [List Accounts](/bank-connect/rest-api.ht
 ## Expense Categories <Badge text="New" />
 Get expense category wise percentage distribution of transaction amounts for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/get_expense_categories/**
 :::
 
@@ -779,7 +779,7 @@ Here, the `progress` field holds an array of statement wise progress status, whi
 ## Top Debit Credit <Badge text="New" />
 Get top debits and credits for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/top_credits_debits/**
 :::
 
@@ -840,7 +840,7 @@ Here, the `progress` field holds an array of statement wise progress status, whi
 ## Monthly Analysis <Badge text="New" />
 Get monthly analysis for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/monthly_analysis/**
 :::
 
@@ -1008,7 +1008,7 @@ Different fields that hold this monthly analysis are as follows:
 ## Rolling Monthly Analysis <Badge text="New" />
 Get Rolling monthly analysis for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/rolling_monthly_analysis/**
 :::
 
@@ -1166,7 +1166,7 @@ Different fields that hold this monthly analysis are as follows:
 <!-- ## Transactions in Excel Workbook <Badge text="New" />
 Get **enriched transactions** and **monthly analysis** for a given entity **account wise** in .xlsx (Excel workbook) format.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/raw_excel_report/**
 :::
 
@@ -1203,7 +1203,7 @@ The Excel workbook will contain three worksheets, first containing the extracted
 ## Detailed Excel Report <Badge text="New" />
 Get detailed report for a given entity **account wise** in .xlsx (Excel workbook) format.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/xlsx_report/**
 :::
 
@@ -1241,7 +1241,7 @@ The Excel workbook contains a detailed analysis of different parameters in the f
 ## Predictors <Badge text="beta" type="warn" />
 Give **account wise** predictors for a given entity.
 
-::: tip Endpoint
+:::tip Endpoint
 GET **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/entity/`<entity_id>`/predictors/**
 :::
 

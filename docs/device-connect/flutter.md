@@ -102,7 +102,7 @@ Add plugin dependency in `pubspec.yaml` file:
   finbox_dc_plugin: any
   ```
 
-::: warning NOTE
+:::warning NOTE
 Following will be shared by FinBox team at the time of integration:
 - `ACCESS_KEY`
 - `SECRET_KEY`
@@ -118,7 +118,7 @@ Following will be shared by FinBox team at the time of integration:
 
 Call `FinBoxDcPlugin.createUser` method to create the user. It takes Client Api Key and Customer Id as the arguments.
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 Please make sure `CUSTOMER_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 :::
 

@@ -28,7 +28,7 @@ COMMON_FLAVOR=<COMMON_FLAVOR>
 LOGGER_SDK_VERSION=<LOGGER_SDK_VERSION>
 ```
 
-::: warning NOTE
+:::warning NOTE
 Following will be shared by FinBox team at the time of integration:
 - `ACCESS_KEY`
 - `SECRET_KEY`
@@ -42,7 +42,7 @@ Following will be shared by FinBox team at the time of integration:
 ## Create User Method
 Call `createUser` method using the `FinBoxRiskManager` instance to create the user (first time) or check the API credentials for the SDK. It takes `CUSTOMER_ID` as one of its arguments which is a unique identifier for a user.
 
-::: danger IMPORTANT
+:::danger IMPORTANT
 Please make sure `CUSTOMER_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 :::
 
@@ -64,7 +64,7 @@ This is to be called only on a successful response to `createUser` method's call
 cordova.plugins.FinBoxRiskManager.startPeriodicSync(12) //Start the sync periodically after every 12 hour
 ```
 
-::: tip Handle Sync Frequency
+:::tip Handle Sync Frequency
 `startPeriodicSync` takes one argument which indicates the frequency of sync **in hours**.
 :::
 

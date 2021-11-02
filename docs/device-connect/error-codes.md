@@ -7,7 +7,7 @@ sidebar_label: Error Codes
 
 Below table contains the constant name, error code value and the description of error code:
 
-::: tip TIP
+:::tip TIP
 All the constants stated below are available as constants in SDK.
 :::
 
