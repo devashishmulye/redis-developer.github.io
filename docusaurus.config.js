@@ -2,15 +2,15 @@ const path = require('path')
 
 
 module.exports = {
-  title: 'Redis Developer Hub',
-  tagline: 'The Home of Redis Developers',
+  title: 'FinBox Developer Documentation',
+  tagline: 'The central place for building your credit program',
   url: 'https://developer.redis.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'redis-developer', // Usually your GitHub org/user name.
-  projectName: 'redis-developer', // Usually your repo name.
+  organizationName: 'finbox-documentation', // Usually your GitHub org/user name.
+  projectName: 'finbox-documentation', // Usually your repo name.
   customFields: {
     authors: {
       simon: {

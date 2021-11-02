@@ -1,0 +1,79 @@
+---
+title: FinBox Embedded Finance Platform
+sidebar_label: Overview
+--- 
+
+import RedisCard from '@site/src/theme/RedisCard';
+
+
+The FinBox Embedded Finance Platform can be embedded within your mobile platform using an AndroidSDK, React Native SDK, or web SDK.
+
+## Introduction
+
+FinBox Embedded Lending SDK lets partners (sourcing entities) embed a fully digital loan journey within their app.
+
+Partners place the lending CTA in context to their existing workflows. When user clicks the CTA, they initialize our SDK. The SDK encapsulates all necessary integrations such as eKYC, credit bureau, NBFC-AA and FinBox custom credit score.
+
+## Workflow
+The diagram below shows the integration workflow for partner app:
+<img src="https://finbox-cdn.s3.ap-south-1.amazonaws.com/docs/assets/ill_sourcing_entity_flow.png" alt="Sourcing Entity Integration Workflow" />
+
+<div>
+<br></br>
+<br></br>
+<br></br>
+</div>
+
+:::tip Web SDK
+In case of [Web SDK](/middleware/web-sdk.html), instead of **Get Token API**, you will have to call the **Session API**, which will return you a web URL to be redirected or rendered in a web view. You can read more about the Web SDK [here](/middleware/web-sdk.html).
+:::
+
+
+
+## Integrate on mobile
+
+<div class="row">
+
+ <div class="col">
+     <RedisCard 
+        title="Android SDK" 
+        imgPath="recloud.png"
+        description="Create database using Redis Enterprise Cloud" 
+        preview="recloud.png"
+        page="/create/rediscloud"
+        />
+ </div>
+
+
+ <div class="col">
+    <RedisCard 
+        title="React Native" 
+        description="Create Redis database on Heroku" 
+        page="/create/heroku"
+        />
+ </div>
+
+
+ <div class="col">
+    <RedisCard 
+        title="Javascript SDK" 
+        description="Create Redis database on Azure Cache" 
+        page="/create/azure"
+        />
+ </div>
+</div>
+
+
+
+## Back-End Integration
+
+<div class="row">
+
+ <div class="col">
+    <RedisCard 
+        title="Rest APIs" 
+        description="Create Redis database on Azure Cache" 
+        page="/create/azure"
+        />
+ </div>
+ </div>
