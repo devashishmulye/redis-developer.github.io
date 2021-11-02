@@ -45,7 +45,7 @@ module.exports = {
       title: null,
       logo: {
         alt: 'FinBox',
-        src: '/src/public/finboxdocs.svg',
+        src: '/img/finboxdocs.svg',
       },
       hideOnScroll: false,
       // items: [
