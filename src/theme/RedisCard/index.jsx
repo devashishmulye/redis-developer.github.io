@@ -9,8 +9,10 @@ const RoadmapItem = (props) => {
     const [displayLong, setDisplayLong] = React.useState(false);
 
     return <div className="ri-container">
+{props.img && <img src={props.img} style={{width:"30%"}}/>}
         <div className="ri-description-short">
             <div className="ri-icon"><span className="fe fe-zap" /></div>
+            
             <div className="ri-detail">
                 <div className="ri-title"><a href={props.page}>{props.title}</a></div>
                 <div className="ri-description">

@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'The central place for building your credit program',
   url: 'https://developer.redis.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'finbox-documentation', // Usually your GitHub org/user name.
@@ -45,7 +45,7 @@ module.exports = {
       title: null,
       logo: {
         alt: 'FinBox',
-        src: '/src/public/FinBoxLight.png',
+        src: '/src/public/FinBoxDark.png',
       },
       hideOnScroll: false,
       items: [
