@@ -73,7 +73,7 @@ POST **`base_url`/v1/user/create**
 ## Get Eligibility
 This API checks for a user's eligibility and returns the eligible amount. Partner platform data and data from DeviceConnect SDK is used to prequalify the customers. The `customer_id` in DeviceConnect SDK should be same as the `customer_id` of user. 
 
-<img src="/src/public/api-workflow-prequalification.jpg" alt="Prequalification API Workflow" />
+<img src="/img/api-workflow-prequalification.jpg" alt="Prequalification API Workflow" />
 
 :::tip Endpoint
 GET **`base_url`/v1/user/eligibility?customerID=`somecustomerid`**
