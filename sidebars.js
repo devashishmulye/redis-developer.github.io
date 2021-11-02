@@ -48,6 +48,7 @@ module.exports = {
         label: 'Embedded Finance',
         href: '/',
       },
+      'embedded-finance/introduction',
       'embedded-finance/overview',
   
       {
