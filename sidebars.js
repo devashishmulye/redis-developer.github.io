@@ -53,7 +53,9 @@ module.exports = {
   
       {
         type: 'category',
-  
+        // collapsible: false,
+        // collapsed: false,
+        // sidebarCollapsible: false,
         label: 'Mobile Integration',
         items: [
           'embedded-finance/android-sdk',
@@ -64,7 +66,9 @@ module.exports = {
       {
         type: 'category',
         label: 'REST APIs',
-  
+        // sidebarCollapsible: false,
+        // collapsible: false,
+        // collapsed: false,
         items: [
           'embedded-finance/rest-api',
           'embedded-finance/banner',

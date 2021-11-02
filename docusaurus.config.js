@@ -35,7 +35,7 @@ module.exports = {
     },
     prism : {
       additionalLanguages: ['csharp', 'php', 'ruby','kotlin','java','groovy'],
-      // theme: require("prism-react-renderer/themes/okaidia"),
+      theme: require("prism-react-renderer/themes/okaidia"),
       // darkTheme: require("prism-react-renderer/themes/dracula"),
 
     },

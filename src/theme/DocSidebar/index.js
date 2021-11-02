@@ -51,14 +51,16 @@ function DocSidebarItemCategory({
   const {
     items,
     label
-  } = item;
+    } = item;
   const isActive = isActiveSidebarItem(item, activePath);
   const wasActive = usePrevious(isActive); // active categories are always initialized as expanded
   // the default (item.collapsed) is only used for non-active categories
 
   const [collapsed, setCollapsed] = useState(() => {
-    if (!collapsible) {
+    // if (!collapsible) {
+    if (!collapsible || collapsible) {
       return false;
+      // Hard coded false here regardless of collapsible or collapsed Boolean. 
     }
 
     return isActive ? false : item.collapsed;

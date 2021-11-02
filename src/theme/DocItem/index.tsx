@@ -120,7 +120,7 @@ function DocItem(props: Props): JSX.Element {
               <div className="margin-vert--xl">
                 <div className="row">
                   <div className="col">
-                    {editUrl && (
+                    {/* {editUrl && (
                       <a
                         href={editUrl}
                         target="_blank"
@@ -128,7 +128,7 @@ function DocItem(props: Props): JSX.Element {
                         <IconEdit />
                         Edit this page
                       </a>
-                    )}
+                    )} */}
                   </div>
                   {(lastUpdatedAt || lastUpdatedBy) && (
                     <div className="col text--right">
