@@ -12,6 +12,10 @@ These APIs are called from the **server side**. The workflow is as follows:
 ## Authentication
 All the APIs below require a **Server API Key** to be passed in `x-api-key` header. This API Key will be shared directly by FinBox. Make sure this key is not exposed in any of your client side applications.
 
+```
+x-api-key: <SERVER_API_KEY>
+```
+
 ## Postman Collection
 Postman **collection** for the REST APIs can be downloaded using the button below:
 

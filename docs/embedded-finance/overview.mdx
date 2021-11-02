@@ -7,17 +7,10 @@ import RedisCard from '@site/src/theme/RedisCard';
 
 ## Steps to integrate
 
-- [**Get started**](/embedded-finance/overview#introduction): models used for keeping prices.
-- [**Integrate UI in your mobile or web platform**](/embedded-finance/overview#Integrate-on-mobile): handle error conditions.
-- [**Integrate back-end APIs**](/embedded-finance/overview#back-end-integration): learn how to traverse large datasets.
-
-
-
-## Introduction
-
-FinBox Embedded Lending SDK lets partners (sourcing entities) embed a fully digital loan journey within their app.
-
-Partners place the lending CTA in context to their existing workflows. When user clicks the CTA, they initialize our SDK. The SDK encapsulates all necessary integrations such as eKYC, credit bureau, NBFC-AA and FinBox custom credit score.
+- [**Get started**](/embedded-finance/overview#prerequisites): Brief overview of what you need to get started
+- [**Integrate UI in your mobile or web platform**](/embedded-finance/overview#Integrate-on-mobile): Integrate the FinBox UI in your platform
+- [**Integrate back-end APIs**](/embedded-finance/overview#back-end-integration): Integrate back-end APIs that 
+- **Integration test**: Integrate back-end APIs
 
 ## Workflow
 The diagram below shows the integration workflow for partner app:
@@ -32,6 +25,28 @@ The diagram below shows the integration workflow for partner app:
 :::tip Web SDK
 In case of [Web SDK](/middleware/web-sdk.html), instead of **Get Token API**, you will have to call the **Session API**, which will return you a web URL to be redirected or rendered in a web view. You can read more about the Web SDK [here](/middleware/web-sdk.html).
 :::
+
+
+## Prerequisites
+
+
+- API Keys and SDK version names for mobile integration
+- Server Keys for back-end integration 
+
+:::tip Note
+The following keys will be shared over an email
+- `ACCESS_KEY`
+- `SECRET_KEY`
+- `LENDING_SDK_VERSION`
+- `DC_SDK_VERSION`
+- `COMMON_SDK_VERSION`
+- `LOGGER_SDK_VERSION`
+- `BC_SDK_VERSION`
+- `PLATFORM_NAME`
+- `SERVER_API_KEY` 
+:::
+
+---
 
 
 
@@ -75,7 +90,7 @@ In case of [Web SDK](/middleware/web-sdk.html), instead of **Get Token API**, yo
 
 <div class="row">
 
- <div class="col--3">
+ <div class="col">
     <RedisCard 
         title="Rest APIs" 
         img="/src/public/API.png"
@@ -83,6 +98,6 @@ In case of [Web SDK](/middleware/web-sdk.html), instead of **Get Token API**, yo
         page="/create/azure"
         />
  </div>
- <div></div>
- <div></div>
+ <div class="col"> <br></br> </div>
+ <div class="col"> <br></br> </div>
  </div>
