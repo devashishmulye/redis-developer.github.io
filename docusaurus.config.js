@@ -41,7 +41,7 @@ module.exports = {
     },
 
     navbar: {
-      style: 'primary',
+      style: 'dark',
       title: null,
       logo: {
         alt: 'FinBox',
