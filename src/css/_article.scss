@@ -54,7 +54,7 @@ hr {
   }
 
   &__link--active {
-    font-weight: 700;
+    font-weight: 500;
   }
 
   &__button {
@@ -95,7 +95,7 @@ hr {
 
     &--active {
       position: relative;
-      font-weight: 700;
+      font-weight: 500;
       color: $purple;
 
       @include dark {
@@ -169,7 +169,7 @@ main:not(.home-main) {
       h1 {
         line-height: 1.2;
         font-family: $lato;
-        font-size: 49px;
+        font-size: 32px;
 
         @include mobile {
           font-size: 39px;
@@ -197,7 +197,7 @@ main:not(.home-main) {
   h5,
   h6 {
     font-family: $lato;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   h1 {
@@ -211,7 +211,7 @@ main:not(.home-main) {
 
   h2 {
     line-height: 1.2;
-    font-size: 38px;
+    font-size: 24px;
 
     @include mobile {
       font-size: 28px;

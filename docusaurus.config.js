@@ -45,27 +45,27 @@ module.exports = {
       title: null,
       logo: {
         alt: 'FinBox',
-        src: '/src/public/FinBoxDark.png',
+        src: '/src/public/finboxdocs.svg',
       },
       hideOnScroll: false,
-      items: [
-        {
-          to: '/create/rediscloud',
-          activeBasePath: 'docs',
-          label: 'Get started',
-          position: 'right',
-        },
-        {
-          href: 'https://launchpad.redis.com',
-          label: 'Redis Launchpad',
-          position: 'right',
-        },
-        {
-          href: 'https://redis.com/try-free/',
-          label: 'Try Free',
-          position: 'right',
-        },
-      ],
+      // items: [
+      //   {
+      //     to: '/create/rediscloud',
+      //     activeBasePath: 'docs',
+      //     label: 'Get started',
+      //     position: 'right',
+      //   },
+      //   {
+      //     href: 'https://launchpad.redis.com',
+      //     label: 'Redis Launchpad',
+      //     position: 'right',
+      //   },
+      //   {
+      //     href: 'https://redis.com/try-free/',
+      //     label: 'Try Free',
+      //     position: 'right',
+      //   },
+      // ],
     },
     footer: {
       style: 'dark',

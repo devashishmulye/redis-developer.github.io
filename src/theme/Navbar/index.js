@@ -90,7 +90,7 @@ function Navbar() {
           {leftItems.map((item, i) => <NavbarItem {...item} key={i} />)}
         </div>
         <div className="navbar__items navbar__items--right">
-          <Search />
+          {/* <Search /> */}
           {rightItems.map((item, i) => <NavbarItem {...item} key={i} />)}
           {!disableColorModeSwitch && <Toggle className={styles.displayOnlyInLargeViewport} aria-label="Dark mode toggle" checked={isDarkTheme} onChange={onToggleChange} />}
         </div>
