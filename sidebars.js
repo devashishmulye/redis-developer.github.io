@@ -74,6 +74,8 @@ module.exports = {
           'embedded-finance/banner',
         ]
       },
+      'embedded-finance/appendix',
+
 
     ],
   },

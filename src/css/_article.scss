@@ -222,7 +222,10 @@ main:not(.home-main) {
 
   h3 {
     line-height: 1.2;
-    font-size: 32px;
+    font-size: 18px;
+    font-weight: 700;
+
+
 
     @include mobile {
       font-size: 22px;

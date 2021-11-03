@@ -28,7 +28,7 @@ module.exports = {
     }
   },
   themeConfig: {
-
+    zoomSelector: '.markdown img',
     // ...
     googleTagManager: {
       trackingID: 'GTM-W8Z6BLQ',
@@ -68,72 +68,73 @@ module.exports = {
       // ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       logo: {
-        alt: 'Redis Labs logo',
-        src: 'img/redis_logo_red_white_rgb.svg',
-        href: 'https://redis.com/', 
+        alt: 'FinBox Logo',
+        src: 'img/FinBoxLight.png',
+        href: 'https://finbox.in/', 
       },
-      links: [
-        {
-          title: 'Get Started',
-          items: [
-            {
-              label: 'Create Database',
-              to: '/create/rediscloud',
-            },
-            {
-              label: 'Develop',
-              to: '/develop/',
-            },
-            {
-              label: 'Explore your data',
-              to: '/explore/redisinsight/',
-            },
-            {
-              label: 'Best Practices',
-              href: 'https://redis.com/redis-best-practices/introduction/',
-            },
-            // {
-            //   label: 'Tutorials',
-            //   to: '#',
-            // },
-            // {
-            //   label: 'Samples & Demos',
-            //   to: '#',
-            // },
-            {
-              label: 'Build with Redis Modules',
-              href: '/howtos/redisearch/',
-            },
-          ],
-        },
-        {
-          title: 'Resources',
-          items: [
-            {
-              label: 'Community',
-              href: 'https://redis.com/community/',
-            },
-            {
-              label: 'Redis University',
-              href: 'https://university.redis.com',
-            },
-            {
-              label: 'Command Reference',
-              href: 'https://redis.io/commands',
-            },
-            {
-              label: 'How-tos & tutorials',
-              to: '/howtos',
-            },
-            //   label: 'Use Cases',
-            //   href: 'https://redis.com/solutions',
-            // },
-          ],
-        },
-      ],
-   copyright: `Copyright: © ${new Date().getFullYear()} Redis. All rights reserved. Redis and the cube logo are registered trademarks of Redis Ltd.`, 
+      // links: [
+      //   {
+      //     title: 'FinBox Product Suite',
+      //     items: [
+      //       {
+      //         label: 'FinBox Embedded Finance Platform',
+      //         to: '/create/rediscloud',
+      //       },
+      //       {
+      //         label: 'Develop',
+      //         to: '/develop/',
+      //       },
+      //       {
+      //         label: 'Explore your data',
+      //         to: '/explore/redisinsight/',
+      //       },
+      //       {
+      //         label: 'Best Practices',
+      //         href: 'https://redis.com/redis-best-practices/introduction/',
+      //       },
+      //       {
+      //         label: 'Tutorials',
+      //         to: '#',
+      //       },
+      //       {
+      //         label: 'Samples & Demos',
+      //         to: '#',
+      //       },
+      //       {
+      //         label: 'Build with Redis Modules',
+      //         href: '/howtos/redisearch/',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Resources',
+      //     items: [
+      //       {
+      //         label: 'Community',
+      //         href: 'https://redis.com/community/',
+      //       },
+      //       {
+      //         label: 'Redis University',
+      //         href: 'https://university.redis.com',
+      //       },
+      //       {
+      //         label: 'Command Reference',
+      //         href: 'https://redis.io/commands',
+      //       },
+      //       {
+      //         label: 'How-tos & tutorials',
+      //         to: '/howtos',
+      //       },
+      //       {
+      //         label: 'Use Cases',
+      //         href: 'https://redis.com/solutions',
+      //       },
+      //     ],
+      //   },
+      // ],
+   copyright: `Copyright: © ${new Date().getFullYear()} FinBox. All rights reserved.`, 
    },
     colorMode: {
       // Hides the switch in the navbar
@@ -170,6 +171,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    'docusaurus-plugin-sass', path.resolve(__dirname, 'plugins', 'gtm') 
+    'docusaurus-plugin-sass', path.resolve(__dirname, 'plugins', 'gtm'),
+    'plugin-image-zoom'
   ],
 };
