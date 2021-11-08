@@ -3,7 +3,6 @@ title: Cordova
 sidebar_label: Cordova
 ---
 
-# BankConnect: Cordova
 BankConnect Cordova SDK helps user submits their bank statements via upload or net banking credentials in your Android application.
 
 ## See in action

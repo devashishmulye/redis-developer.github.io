@@ -6,7 +6,6 @@ sidebar_label: Android Client
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# BankConnect: Android Client SDK
 The Android Client SDK helps user submits their bank statements via upload or net banking credentials in your Android application.
 
 ## See in action

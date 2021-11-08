@@ -13,7 +13,6 @@ DeviceConnect lets businesses get access to enriched Android mobile device data 
 [Contact us](https://finbox.in/contact-us) and request for a pilot.
 :::
 
-## Integrate on mobile
 <!-- FinBox DeviceConnect requires two integrations - first on Android app from which **users can share data**:
 - [Android](/device-connect/android.html)
 - [React Native](/device-connect/react-native.html)
@@ -22,6 +21,12 @@ DeviceConnect lets businesses get access to enriched Android mobile device data 
 
 And then on the backend to **fetch predictors** responsible for making decisions:
 - [REST API](/device-connect/rest-api.html) -->
+
+Integration flow on the mobile and the back-end should be as shown below
+
+<img src="/img/device_connect_integration_2.png" alt="Client Workflow" style={{width:"80%", height:"80%"}} />
+
+## Integrate on mobile
 
 
 <div class="row">

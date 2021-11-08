@@ -215,6 +215,7 @@ The identity information returned in the response can be used to verify the cust
 ## Bad Request Cases
 
 In case of successful upload, you'll get the `status` field value as `1`. Following are bad request cases with status codes:
+
 | Case | HTTP status code | status field value | Sample response |
 | - | - | - | - |
 | Compulsory field is missing |  400 | 0 | `{"file": ["This field is required."], "status": 0}` |

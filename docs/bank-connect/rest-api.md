@@ -66,6 +66,7 @@ It is to be noted that `status` for all different analysis APIs are separate, th
 In all of the analysis field APIs (transaction, accounts, etc.), there is a field `fraud` present, that holds an object with two fields:
 - `fraudulent_statements`: array of `statement_id`s which have some sort detected after analysis or in first basic check)
 - `fraud_type`: array of fraud objects having following keys:
+
     | Key | Type | Description |
     | - | - | - |
     | `statement_id` | String | Specifies the statement id for statement-level fraud. In case of account-level fraud, its value is `null` |
@@ -1093,6 +1094,7 @@ Here, the `progress` field holds an array of statement wise progress status, whi
 Months are represented in `Mmm-YYYY` format in key.
 
 Different fields that hold this monthly analysis are as follows:
+
 | Fields(Unique)                       | Finbox variables                           | Definition                                                                                                                                                        | Amount Present| Sum | Avg | Max | Min | Count | Max Date | Min Date | Tx Type         | Data format     |
 |--------------------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----|-----|-----|-----|-------|----------|----------|-----------------|-----------------|
 | Bank Balance (Daily Closing Balance) | closing_balance                            | Closing balance                                                                                                                                                   | Yes           | NA  | Yes | Yes | Yes | Yes   | Yes      | Yes      | Debit or Credit | rolling 30 days |
