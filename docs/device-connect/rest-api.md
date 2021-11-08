@@ -29,7 +29,8 @@ Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predicto
 
 ### Workflow
 
-<img src="/rest_api_workflow.png" alt="Rest API Workflow" />
+<img src="/img/rest_api_workflow.png" alt="Rest API Workflow" />
+<div><br></br></div>
 
 1. Call FinBox Insights API
 2. In case the response status is `"in_progress"`, retry after 10 seconds
@@ -39,8 +40,9 @@ Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predicto
 
 :::tip Base URL
 For all the endpoints, the base URL for different environments are as follows: 
+
 | Environment | Base URL |
-| - | - | -| - |
+| - | - |
 | Production | **https://insights.finbox.in/v2/** |
 | Development | **https://insights.finbox.in/staging/** |
 :::
@@ -59,6 +61,7 @@ Other than general predictors, there are also more predictor endpoints which wil
 For all the Insights API request structure is the same, all requests must have `x-api-key` field in **header** having the value as the `SERVER_API_KEY` shared by FinBox team. The following **keys** must be passed in every request body as keys to a JSON document:
 
 **Request Body**
+
 | Key | Type | Description |
 | --- | --- | --- |
 | customer_id | String | `CUSTOMER_ID` for which feature vector is required |
@@ -67,6 +70,7 @@ For all the Insights API request structure is the same, all requests must have `
 | metadata (`optional`) | Json | A dictionary which can be used to pass additional information for example loan_type, loan_amount or any tags |
 
 **Sample Metadata value**
+
 | Key | Type | Description |
 | --- | --- | --- |
 | loan_type | String | Can be a string denoting the type of loan e.g. business_loan, msme_loan, personal_loan |

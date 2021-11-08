@@ -197,7 +197,7 @@ Following will be shared by FinBox team at the time of integration:
 
 ## Integration Workflow
 The diagram below illustrates the integration workflow in a nutshell:
-<img src="/client_sdk.jpg" alt="Client SDK Workflow" />
+<img src="/img/client_sdk.jpg" alt="Client SDK Workflow" />
 
 ## Sample Project
 We have hosted a sample project on GitHub, you can check it out here:

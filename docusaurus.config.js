@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   title: 'FinBox Developer Documentation',
   tagline: 'The central place for building your credit program',
-  url: 'https://developer.redis.com',
+  url: 'https://docs.finbox.in',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -48,24 +48,24 @@ module.exports = {
         src: '/img/finboxdocs.svg',
       },
       hideOnScroll: false,
-      // items: [
-      //   {
-      //     to: '/create/rediscloud',
-      //     activeBasePath: 'docs',
-      //     label: 'Get started',
-      //     position: 'right',
-      //   },
-      //   {
-      //     href: 'https://launchpad.redis.com',
-      //     label: 'Redis Launchpad',
-      //     position: 'right',
-      //   },
-      //   {
-      //     href: 'https://redis.com/try-free/',
-      //     label: 'Try Free',
-      //     position: 'right',
-      //   },
-      // ],
+      items: [
+        {
+          to: '/bank-connect/',
+          activeBasePath: 'docs',
+          label: 'BankConnect',
+          position: 'right',
+        },
+        {
+          to: '/device-connect/',
+          label: 'DeviceConnect',
+          position: 'right',
+        },
+        {
+          to: '/embedded-finance/',
+          label: 'Embedded Finance Platform',
+          position: 'right',
+        },
+      ],
     },
     footer: {
       style: 'light',
@@ -74,66 +74,66 @@ module.exports = {
         src: 'img/FinBoxLight.png',
         href: 'https://finbox.in/', 
       },
-      // links: [
-      //   {
-      //     title: 'FinBox Product Suite',
-      //     items: [
-      //       {
-      //         label: 'FinBox Embedded Finance Platform',
-      //         to: '/create/rediscloud',
-      //       },
-      //       {
-      //         label: 'Develop',
-      //         to: '/develop/',
-      //       },
-      //       {
-      //         label: 'Explore your data',
-      //         to: '/explore/redisinsight/',
-      //       },
-      //       {
-      //         label: 'Best Practices',
-      //         href: 'https://redis.com/redis-best-practices/introduction/',
-      //       },
-      //       {
-      //         label: 'Tutorials',
-      //         to: '#',
-      //       },
-      //       {
-      //         label: 'Samples & Demos',
-      //         to: '#',
-      //       },
-      //       {
-      //         label: 'Build with Redis Modules',
-      //         href: '/howtos/redisearch/',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Resources',
-      //     items: [
-      //       {
-      //         label: 'Community',
-      //         href: 'https://redis.com/community/',
-      //       },
-      //       {
-      //         label: 'Redis University',
-      //         href: 'https://university.redis.com',
-      //       },
-      //       {
-      //         label: 'Command Reference',
-      //         href: 'https://redis.io/commands',
-      //       },
-      //       {
-      //         label: 'How-tos & tutorials',
-      //         to: '/howtos',
-      //       },
-      //       {
-      //         label: 'Use Cases',
-      //         href: 'https://redis.com/solutions',
-      //       },
-      //     ],
-      //   },
-      // ],
+      links: [
+        {
+          title: 'FinBox Product Suite',
+          items: [
+            {
+              label: 'FinBox Embedded Finance Platform',
+              href: 'https://finbox.in/products/embedded-finance',
+            },
+            {
+              label: 'BankConnect',
+              href: 'https://finbox.in/products/bank-connect/',
+            },
+            {
+              label: 'DeviceConnect',
+              to: 'https://finbox.in/products/device-connect/',
+            },
+            // {
+            //   label: 'Best Practices',
+            //   href: 'https://redis.com/redis-best-practices/introduction/',
+            // },
+            // {
+            //   label: 'Tutorials',
+            //   to: '#',
+            // },
+            // {
+            //   label: 'Samples & Demos',
+            //   to: '#',
+            // },
+            // {
+            //   label: 'Build with Redis Modules',
+            //   href: '/howtos/redisearch/',
+            // },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Engineering Blog',
+              href: 'https://medium.com/finbox',
+            },
+            {
+              label: 'FinTech Blog',
+              href: 'https://finbox.in/blog',
+            },
+            // {
+            //   label: 'Command Reference',
+            //   href: 'https://redis.io/commands',
+            // },
+            // {
+            //   label: 'How-tos & tutorials',
+            //   to: '/howtos',
+            // },
+            // {
+            //   label: 'Use Cases',
+            //   href: 'https://redis.com/solutions',
+            // },
+          ],
+        },
+      ],
    copyright: `Copyright: © ${new Date().getFullYear()} FinBox. All rights reserved.`, 
    },
     colorMode: {

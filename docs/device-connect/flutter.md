@@ -4,8 +4,6 @@ sidebar_label: Flutter
 ---
 
 
-# DeviceConnect: Flutter
-
 Device Connect Flutter SDK is used to collect anonymised non-PII data from the devices of the users after taking explicit user consent.
 
 

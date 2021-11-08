@@ -4,7 +4,6 @@ sidebar_label: React Native
 ---
 
 
-# DeviceConnect: React Native
 Device Connect React Native SDK is used to collect anonymised non-PII data from the devices of the users after taking explicit user consent.
 
 ## Installation

@@ -1,10 +1,8 @@
 ---
-base_url: https://portal.finbox.in/bank-connect #base URL for the API
-version: v1 # version of API
+title: Management
+sidebar_label: Management
 ---
 
-
-# BankConnect: Management
 
 BankConnect REST APIs also provide additional APIs for management purposes. This article lists them.
 

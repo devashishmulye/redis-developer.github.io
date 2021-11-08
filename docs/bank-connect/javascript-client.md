@@ -3,19 +3,13 @@ title: Javascript Client
 sidebar_label: Javascript Client
 ---
 
----
 
-
-base_url: https://portal.finbox.in/bank-connect #base URL for the API
-version: v1 # version of API
----
-# BankConnect: JavaScript Client SDK
 The JavaScript Client SDK helps user submit their bank statements via upload or net banking credentials in your Web applications. The SDK will be opened via a web URL.
 
 The first step in integration involves calling the [Session API](/bank-connect/javascript-client.html#session-api)
 Then the workflow can be implemented in one of the following ways:
-- [Load in a new page with redirect URL](/bank-connect/javascript-client.html#redirect-workflow)
-- [Embedding inside an Inline Frame (`<iframe>`)](/bank-connect/javascript-client.html#inline-frame-workflow)
+- [Load in a new page with redirect URL](/bank-connect/javascript-client#redirect-workflow)
+- [Embedding inside an Inline Frame (`<iframe>`)](/bank-connect/javascript-client#inline-frame-workflow)
 
 ## See in action
 The demo video below shows how a user submit bank statement using net banking credentials:
@@ -64,7 +58,7 @@ Use `redirect_url` to open up the BankConnect SDK. This URL can be used embedded
 
 ## Redirect Workflow
 
-<img src="/javascript_redirect.jpg" alt="JavaScript Client SDK Redirect Workflow" />
+<img src="/img/javascript_redirect.jpg" alt="JavaScript Client SDK Redirect Workflow" />
 
 The flow for this involves following steps:
 - Create a session using [Session API](/bank-connect/javascript-client.html#session-api)
@@ -79,7 +73,7 @@ Since there is no callback received on this flow, it is recommended to configure
 
 ## Inline Frame Workflow
 
-<img src="/javascript_iframe.jpg" alt="JavaScript Client SDK iframe Workflow" />
+<img src="/img/javascript_iframe.jpg" alt="JavaScript Client SDK iframe Workflow" />
 
 The flow for this involves the following steps:
 - Create a session using [Session API](/bank-connect/javascript-client.html#session-api)

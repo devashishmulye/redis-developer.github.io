@@ -1,4 +1,7 @@
-# BankConnect: Fraud
+---
+title: Fraud
+sidebar_label: Fraud
+---
 
 There are some frauds which are detected at the first step when the statement file is successfully uploaded, these are called **Metadata frauds** and are returned as a response to upload API.
 

@@ -1,14 +1,9 @@
 ---
-title: Authentication REST APIs
-sidebar_label: Authentication REST APIs
+title: REST APIs
+sidebar_label: REST APIs
 ---
 
----
-base_url: https://portal.finbox.in/bank-connect #base URL for the API
-version: v1 # version of API
----
 
-# BankConnect: Uploading using REST API
 BankConnect REST APIs can be used to submit bank statement PDFs for an entity.
 
 You can also try these APIs on Postman. Check out [this](/bank-connect/#postman-collection) article for more details.

@@ -4,7 +4,6 @@ sidebar_label: Cordova
 ---
 
 
-# DeviceConnect: Cordova
 The Cordova plugin can be used to integrate mobile apps with DeviceConnect so that users can share their data.
 
 ## Installation

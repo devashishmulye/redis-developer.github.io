@@ -92,20 +92,20 @@ module.exports = {
           'bank-connect/cordova',
           'bank-connect/javascript-client',
           'bank-connect/upload-rest-api',
+          'bank-connect/upload-python',
+
 
         ]
       },
+
       {
         type: 'category',
         label: 'Fetching Statements',
         items: [
           'bank-connect/fetch-overview',
-          'bank-connect/android-client',
-          'bank-connect/react',
-          'bank-connect/cordova',
-          'bank-connect/javascript-client',
-          'bank-connect/upload-rest-api',
-
+          'bank-connect/rest-api',
+          'bank-connect/python',
+          'bank-connect/webhook',
         ]
       },
         'bank-connect/management',
@@ -132,8 +132,16 @@ module.exports = {
 
       ]
     },
-    'device-connect/rest-api',
+    {
+      type: 'category',
+      label: 'Fetching Data using REST APIs',
+      items: [
+        'device-connect/insights-integration-flow',
+        'device-connect/insights-api',
+        'device-connect/salt-generation',
 
+      ]
+    },
   
     ]
   

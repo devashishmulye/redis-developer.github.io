@@ -1,16 +1,28 @@
 ---
 title: Permissions
-sidebar_label: Permissions
+sidebar_label: Handling Permissions
 ---
 
-
-# DeviceConnect: Handle Permissions
 
 The Runtime permissions needs to handled by the developer when calling the helper methods. Based on the permissions available, the SDK intelligently syncs the alternate data.
 
 Create a Permission Screeen with the list of permissions with a description that explains how the data is collected benefits the user. In addition to it, add Privacy Policy to the bottom of the screen.
 
-<img src="/permission_screen.jpg" alt="Permission Screen" style={{width:"80%", height:"80%"}} />
+<div class="row">
+<div class="col">
+<br></br>
+</div>
+
+<div class="col">
+<img src="/img/permission_screen-resized.png" alt="Permission Screen" style={{height:"90%", align: "center"}} />
+</div>
+
+<div class="col">
+<br></br>
+</div>
+
+</div>
+
 
 Below are the list of Runtime permissions the sdk automatically adds to the application Manifest, if Manifest Merger is enabled:
 ```xml

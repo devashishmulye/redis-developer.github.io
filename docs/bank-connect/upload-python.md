@@ -1,9 +1,8 @@
 ---
-base_url: https://portal.finbox.in #base URL in python library
-version: v1 # version of API
+title: Python client
+sidebar_label: Python client
 ---
 
-# BankConnect: Uploading using Python Package
 FinBox provides an official python package for the BankConnect product. This package has functions to upload statement PDF Files and get enriched data.
 
 ## Requirements
@@ -160,6 +159,7 @@ If the value was not previously retrieved, it will poll and check for progress, 
 
 ### Arguments
 This method also has following **optional** arguments:
+
 | Argument | Type | Description | Default |
 | - | - | - | - |
 | reload | Boolean | If provided as `True`, it will ignore the cached value, and again make an API call and re-fetch the values | `False` |
