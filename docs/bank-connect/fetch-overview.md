@@ -5,7 +5,7 @@ sidebar_label: Fetching data
 
 Fetching enriched data is the second step involved in the BankConnect Integration flow. To fetch enriched data you need to have `entity_id` with you.
 
-<img src="/img/fetch_enriched_data.jpg" alt="Fetching Enriched Data" style={{width:"80%", height:"80%"}} />
+<img src="/img/webhook.png" alt="Fetching Enriched Data" style={{width:"80%", height:"80%"}} />
 
 As shown in the diagram there are two ways you can go ahead with this step:
 

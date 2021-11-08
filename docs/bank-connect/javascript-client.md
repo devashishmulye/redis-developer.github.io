@@ -58,7 +58,7 @@ Use `redirect_url` to open up the BankConnect SDK. This URL can be used embedded
 
 ## Redirect Workflow
 
-<img src="/img/javascript_redirect.jpg" alt="JavaScript Client SDK Redirect Workflow" />
+<img src="/img/redirect_workflow_bankconnect.png" alt="JavaScript Client SDK Redirect Workflow" />
 
 The flow for this involves following steps:
 - Create a session using [Session API](/bank-connect/javascript-client.html#session-api)
