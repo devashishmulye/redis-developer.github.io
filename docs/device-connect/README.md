@@ -1,11 +1,10 @@
 ---
 title: Overview
 sidebar_label: Integration Overview
-slug : /device-connect/
+slug: /device-connect/
 ---
 
 import RedisCard from '@site/src/theme/RedisCard';
-
 
 DeviceConnect lets businesses get access to enriched Android mobile device data of customers to build lending and wealth management apps. This is especially useful when borrowers are new to credit or are thin-file customers, as it helps them get better terms based on the shared data.
 
@@ -28,7 +27,6 @@ Integration flow on the mobile and the back-end should be as shown below
 
 ## Integrate on mobile
 
-
 <div class="row">
 
 <div class="col">
@@ -40,7 +38,6 @@ Integration flow on the mobile and the back-end should be as shown below
         />
 </div>
 
-
 <div class="col">
     <RedisCard 
         title="React Native" 
@@ -48,7 +45,7 @@ Integration flow on the mobile and the back-end should be as shown below
         description="Integrate it on your web or mobile app" 
         page="device-connect/react-native"
         />
-</div>  
+</div>
 
 </div>
 
@@ -63,7 +60,6 @@ Integration flow on the mobile and the back-end should be as shown below
         />
 </div>
 
-
 <div class="col">
     <RedisCard 
         title="Cordova" 
@@ -71,10 +67,9 @@ Integration flow on the mobile and the back-end should be as shown below
         description="Integrate it on your web or mobile app" 
         page="device-connect/cordova"
         />
-</div>  
-
 </div>
 
+</div>
 
 ## Back-End Integration
 
