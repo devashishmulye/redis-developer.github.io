@@ -73,7 +73,7 @@ Since there is no callback received on this flow, it is recommended to configure
 
 ## Inline Frame Workflow
 
-<img src="/img/javascript_iframe.jpg" alt="JavaScript Client SDK iframe Workflow" />
+<img src="/img/inline_frame_workflow.png" alt="JavaScript Client SDK iframe Workflow" />
 
 The flow for this involves the following steps:
 - Create a session using [Session API](/bank-connect/javascript-client.html#session-api)
@@ -239,3 +239,7 @@ Android and JS events are passed which can used for purposes such as analytics.T
 |Manual upload screen opened|manual|-|
 |Clicked back in Manual Upload|manual_upload_back|-|
 |Clicked back in Netbanking|net_banking_back|-|
+
+
+
+
