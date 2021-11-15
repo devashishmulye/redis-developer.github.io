@@ -354,8 +354,8 @@ main:not(.home-main) {
   margin-bottom: 30px;
   padding: 20px;
   height: calc(100% - 30px);
-  border: 2px solid #e5e5e5;
-  box-shadow: 0px 4px 10px 3px rgba(196, 196, 196, 0.2);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 4px 10px 3px rgba(196, 196, 196, 0.226);
   transition: border-color 0.2s ease-in-out;
 
   @include dark {

@@ -145,5 +145,75 @@ module.exports = {
   
     ]
   
+},
+
+ProductOverview: { 'FinBox Overview' : [
+  'product/finbox_overview',
+  {
+    type: 'category',
+    label: 'Who are you?',
+    items: [
+      'product/persona/b2b-ecommerce',
+      'product/persona/digital-platform',
+      'product/persona/retail-tech',
+      'product/persona/enterprise',
+
+    ]
+  },
+  {
+    type: 'category',
+    label: 'Building Blocks',
+    items: [
+      'product/onboarding',
+      'product/risk',
+      'product/capital',
+      'product/loan-management',
+      'product/collections',
+      'product/reconciliation',
+
+    ]
+  },
+  {
+    type: 'category',
+    label: 'What you can build?',
+    items: [
+      'product/build/buy-now-pay-later',
+      'product/build/buy-now-pay-later-overdraft',
+      'product/build/term-loans',
+      'product/build/credit-line',
+      'product/build/salary-advance',
+      'product/build/personal-loans',
+      'product/build/what-cant-you-build',
+
+
+    ]
+  },
+  {
+    type: 'category',
+    label: 'Features',
+    items: [
+      'product/features/adaptive-journey',
+      'product/features/configurable-journey',
+      'product/features/NTC-lending',
+      'product/features/device-data-underwriting',
+      'product/features/platform-data-underwriting',
+      'product/features/account-aggregator-integration',
+      'product/features/automated-bank-statement-analysis',
+      'product/features/collections-suite',
+      'product/features/white-labelled',
+      'product/features/customer-support',
+      'product/features/lender-support',
+      'product/features/loan-origination-system',
+      'product/features/loan-management-system',
+      'product/features/e-KYC',
+      'product/features/e-mandate',
+      'product/features/GST-integration',
+
+    ]
+  },
+
+
+  ]
+
 }
 };
