@@ -57,8 +57,8 @@ function DocSidebarItemCategory({
   // the default (item.collapsed) is only used for non-active categories
 
   const [collapsed, setCollapsed] = useState(() => {
-    // if (!collapsible) {
-    if (!collapsible || collapsible) {
+    if (!collapsible) {
+    // if (!collapsible || collapsible) {
       return false;
       // Hard coded false here regardless of collapsible or collapsed Boolean. 
     }

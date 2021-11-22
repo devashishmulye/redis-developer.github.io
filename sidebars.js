@@ -148,31 +148,8 @@ module.exports = {
 },
 
 ProductOverview: { 'FinBox Overview' : [
+  'product/documentation_overview',
   'product/finbox_overview',
-  {
-    type: 'category',
-    label: 'Who are you?',
-    items: [
-      'product/persona/b2b-ecommerce',
-      'product/persona/digital-platform',
-      'product/persona/retail-tech',
-      'product/persona/enterprise',
-
-    ]
-  },
-  {
-    type: 'category',
-    label: 'Building Blocks',
-    items: [
-      'product/onboarding',
-      'product/risk',
-      'product/capital',
-      'product/loan-management',
-      'product/collections',
-      'product/reconciliation',
-
-    ]
-  },
   {
     type: 'category',
     label: 'What you can build?',
@@ -188,6 +165,47 @@ ProductOverview: { 'FinBox Overview' : [
 
     ]
   },
+  {
+    type: 'category',
+    label: 'Building Blocks',
+    items: [
+      'product/block/onboarding',
+      'product/block/risk',
+      'product/block/capital',
+      'product/block/loan-management',
+      'product/block/collections',
+      'product/block/reconciliation',
+
+    ]
+  },
+  {
+    type: 'category',
+    label: 'Product suite',
+    items: [
+      'product/persona/b2b-ecommerce',
+      'product/persona/digital-platform',
+      'product/persona/retail-tech',
+      'product/persona/enterprise',
+
+    ]
+  },
+  'product/integrations',
+
+  {
+    type: 'category',
+    label: "What's the right strategy for you?",
+    items: [
+      'product/persona/b2b-ecommerce',
+      'product/persona/digital-platform',
+      'product/persona/retail-tech',
+      'product/persona/enterprise',
+
+    ]
+  },
+  'product/pm-checklist',
+
+  
+
   {
     type: 'category',
     label: 'Features',
@@ -210,7 +228,7 @@ ProductOverview: { 'FinBox Overview' : [
       'product/features/GST-integration',
 
     ]
-  },
+  }
 
 
   ]
