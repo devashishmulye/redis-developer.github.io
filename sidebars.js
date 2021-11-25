@@ -150,6 +150,7 @@ module.exports = {
 ProductOverview: { 'FinBox Overview' : [
   'product/documentation_overview',
   'product/finbox_overview',
+  'product/nomenclature',
   {
     type: 'category',
     label: 'What you can build?',
