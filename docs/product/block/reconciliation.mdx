@@ -7,72 +7,19 @@ hide_table_of_contents: false
 
 import RedisCard from "@site/src/theme/RedisCard";
 
+Repayment can be done within 15 days from the date of withdrawal. Users can repay their EMI before their due date as well.
+## Reconciliation or EMI Repayments can be done in 3 ways:
 
-## What is FinBox?
+** 1. App Payment(via FinBox payment gateway)**
 
-FinBox is a credit infrastructure and risk intelligence company. We build various products in the digital lending value chain. 
-We enable
+Users pay via our payment gateway. Money is transferred to FinBox’s account and then we transfer it to the respective lenders.
 
- - Any company to launch a digital credit program on their platform by leveraging our end-to-end credit infrastructure.
- - Lenders to improve their approval rates and collection percentage by providing risk intelligence 
+** 2. Via eNACH(Digio aur Cashfree)**
 
-
-## Why FinBox?
-
-<img src="/img/build_overview.png" alt="Build overview" />
+eNACH is activated on the due date. In the case of Cashfree money is paid to FinBox then transferred to the lenders. In the case of Digio, money is directly transferred to the respective lenders. We only notify the lenders about repayment.
 
 
-## Embedded Finance
+** 3. Bank Payment **
 
-<div class="row">
+A virtual Bank Account is created and the user can transfer money to this account. This is done to avoid the confusion created by multiple repayment deadlines( If the user withdraws money from the credit line on consecutive 5 days, then the repayment deadline will be on consecutive 5 days so to avoid that this virtual bank account is created).
 
-<div class="col">
-  <RedisCard
-    title="FinBox Embedded Finance Platform"
-    img="/img/EmbeddedFinance.svg"
-    description="Build your own credit program by leveraging the FinBox Embedded Finance Platform"
-    page="/embedded-finance/"
-  />
-</div>
-
-<div class="col">
-  <br></br>
-</div>
-
-</div>
-
-## Risk Intelligence
-
-<div class="row">
-
-<div class="col">
-  <RedisCard
-    title="DeviceConnect"
-    img="/img/DeviceConnect.svg"
-    description="Leverage device data to build advanced underwriting models"
-    page="/device-connect/"
-  />
-</div>
-
- <div class="col">
-    <RedisCard 
-        title="BankConnect" 
-        img="/img/BankConnect.svg"
-        description="Integrate Account Aggregator and Bank Statement Analysis in your platform" 
-        page="/bank-connect/"
-        />
- </div>
-  </div>
-
-<div class="row">
-
- <div class="col">
-    <RedisCard 
-        title="CollectX" 
-        img = "/img/collectx.svg"
-        description="Leverage device data and real-time monitoring to build collection prioritisation system" 
-        page="/create/azure"
-        />
- </div>
-  <div class="col"><br></br></div>
-</div>
