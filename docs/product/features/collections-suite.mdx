@@ -7,72 +7,23 @@ hide_table_of_contents: false
 
 import RedisCard from "@site/src/theme/RedisCard";
 
+EMI collection can be done by multiple ways. Users can pay thier EMIs via
 
-## What is FinBox?
+**eNACH and Mandates**
 
-FinBox is a credit infrastructure and risk intelligence company. We build various products in the digital lending value chain. 
-We enable
-
- - Any company to launch a digital credit program on their platform by leveraging our end-to-end credit infrastructure.
- - Lenders to improve their approval rates and collection percentage by providing risk intelligence 
+eNACH is activated on the due date. Money will be auto-debitted from users' bank account.
 
 
-## Why FinBox?
+**App Payment(via FinBox payment gateway)**
 
-<img src="/img/build_overview.png" alt="Build overview" />
+Users pay via our payment gateway. Money is transferred to FinBox’s account and then we transfer it to the respective lenders.
 
 
-## Embedded Finance
+** Bank Payment **
 
-<div class="row">
+A virtual Bank Account is created and the user can transfer money to this account. This is done to avoid the confusion created by multiple repayment deadlines( If the user withdraws money from the credit line on consecutive 5 days, then the repayment deadline will be on consecutive 5 days so to avoid that this virtual bank account is created).
 
-<div class="col">
-  <RedisCard
-    title="FinBox Embedded Finance Platform"
-    img="/img/EmbeddedFinance.svg"
-    description="Build your own credit program by leveraging the FinBox Embedded Finance Platform"
-    page="/embedded-finance/"
-  />
-</div>
+## CollectX
 
-<div class="col">
-  <br></br>
-</div>
+[CollectX](/product/products/collect-x) is an intelligence system that helps lenders continuously assess borrowers' ability to repay loans with real-time analysis of thier digitally active credit portfolio. It enables them to take empathetic remedial measures without alienating customers with predatory collection parctices. It help lenders optimize resources for maximum collection.
 
-</div>
-
-## Risk Intelligence
-
-<div class="row">
-
-<div class="col">
-  <RedisCard
-    title="DeviceConnect"
-    img="/img/DeviceConnect.svg"
-    description="Leverage device data to build advanced underwriting models"
-    page="/device-connect/"
-  />
-</div>
-
- <div class="col">
-    <RedisCard 
-        title="BankConnect" 
-        img="/img/BankConnect.svg"
-        description="Integrate Account Aggregator and Bank Statement Analysis in your platform" 
-        page="/bank-connect/"
-        />
- </div>
-  </div>
-
-<div class="row">
-
- <div class="col">
-    <RedisCard 
-        title="CollectX" 
-        img = "/img/collectx.svg"
-        description="Leverage device data and real-time monitoring to build collection prioritisation system" 
-        page="/create/azure"
-        />
- </div>
-  <div class="col"><br></br></div>
-</div>
