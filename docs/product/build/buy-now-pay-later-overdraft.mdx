@@ -1,77 +1,79 @@
 ---
 title: Buy-Now, Pay-Later Overdraft
 sidebar_label: Buy-Now, Pay-Later Overdraft
-slug: buy-now-pay-later
+slug: buy-now-pay-later-overdraft
 hide_table_of_contents: false
 ---
 import RedisCard from "@site/src/theme/RedisCard";
 
+## Introduction to Buy-Now, Pay-Later Overdraft
 
-## What is FinBox?
+FinBox Buy-Now, Pay-Later Overdraft stack enables you to offer BNPL at checkout inside your platform. It is a fully managed end-to-end lending journey. Through this offering, your customers can activate an overdraft account and start purchasing on credit instantly. User can borrow a loan as long as he maintains the minimum balance in the overdraft account.
 
-FinBox is a credit infrastructure and risk intelligence company. We build various products in the digital lending value chain. 
-We enable
+This helps you improve your GMV, AOV, Wallet Share, CLTV, and customer acquisition
 
- - Any company to launch a digital credit program on their platform by leveraging our end-to-end credit infrastructure.
- - Lenders to improve their approval rates and collection percentage by providing risk intelligence 
+## About the BNPL Overdarft
+
+* Buy-Now, Pay-Later is powered by an overdraft account, i.e, the user has to maintain a minimum balance only in his bank account.
+* Users can make multiple purchases from your checkout screen
+* All subsequent transactions are instant.
+* The Overdraft account is valid for 1 year.
+* We support multiple repayment models, based on your target demographic.
+* The repayment tenure is flexible.
+
+## User journey
+
+### Step 1 - User applies for an overdraft account
+***The user is shown an offer to apply for an overdraft account*** - The first step in the user journey is applying for an overdraft account which powers the Buy-Now, Pay-Later. The user will first see the option to activate his overdraft account via a banner in the anchor app.
+
+***User shares his data and his eligibility is checked*** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
+
+***E-KYC*** 
+Following this the user completes his eKYC by submitting his
+*PAN Card
+*Address proof (Aadhaar or Passport)
+*Selfie
+*Business registration proof.
+
+**Sets up ENACH** - User sets up his Enach. There are 2 ways of doing so - 
+* E-NACH
+* Manual NACH
+
+**Completes the application process** - User e-signs a loan agreement and the application journey is completed.
 
 
-## Why FinBox?
-
-<img src="/img/build_overview.png" alt="Build overview" />
+### Step 2 - Making Transactions
 
 
-## Embedded Finance
+Users will see BNPL as a payment option in the Anchor app's checkout page. They can select their preferred repayment plan and 
+make instant transactions on credit
 
-<div class="row">
+### Step 3 - Repayment
 
-<div class="col">
-  <RedisCard
-    title="FinBox Embedded Finance Platform"
-    img="/img/EmbeddedFinance.svg"
-    description="Build your own credit program by leveraging the FinBox Embedded Finance Platform"
-    page="/embedded-finance/"
-  />
-</div>
+Users can repay from within the app.
 
-<div class="col">
-  <br></br>
-</div>
+## Key Features
 
-</div>
+**We Approve NTC customers** - For NTC(New to credit) users we use alternate data for underwriting. We get alternate data using device connect and also from partners.
 
-## Risk Intelligence
+**Adaptive Journey** - The user onboarding journey is configurable. If the user has thin data, he can choose to share his bank statement. In case he has enough data, we don't require his Bank Statement. 
 
-<div class="row">
+:::warning We collect the bank statement through out own product called [BankConnect](/product/products/bank-connect)
+BankConnect enables users to submit their bank statement via one of 3 modes - 
+* Account Aggregator
+* Uploading PDF of their bank statement
+* By netbanking
+:::
 
-<div class="col">
-  <RedisCard
-    title="DeviceConnect"
-    img="/img/DeviceConnect.svg"
-    description="Leverage device data to build advanced underwriting models"
-    page="/device-connect/"
-  />
-</div>
 
- <div class="col">
-    <RedisCard 
-        title="BankConnect" 
-        img="/img/BankConnect.svg"
-        description="Integrate Account Aggregator and Bank Statement Analysis in your platform" 
-        page="/bank-connect/"
-        />
- </div>
-  </div>
+**no-code integartion for Pilots** - 
 
-<div class="row">
+**Configurable and white labeled ** - Anchor platforms can change the look and feel of the UI as per their branding and target demographic.
 
- <div class="col">
-    <RedisCard 
-        title="CollectX" 
-        img = "/img/collectx.svg"
-        description="Leverage device data and real-time monitoring to build collection prioritisation system" 
-        page="/create/azure"
-        />
- </div>
-  <div class="col"><br></br></div>
-</div>
+**Prequalification** - . So even before the customers apply, we pre-qualify customers based on the device data (alternate data) and data coming from the partner.
+
+**Credit scoring NTCs** - Our Alternative data-based underwriting scorecards from mobile device data enable us to approve New-to-Credit customers
+
+**Account Aggregator Integration** - enables users to connect their bank account data with us in a safe and consent-driven way.
+
+ 
