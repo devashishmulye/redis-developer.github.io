@@ -5,7 +5,7 @@
   --ifm-menu-color-active: var(--purple);
   --ifm-menu-color-background-active: var(--purple-light);
   --ifm-menu-color-background-hover: var(--purple-light);
-  --ifm-toc-border-color: var(--white);
+  --ifm-toc-border-color: #e5e5e5;
 
   --ifm-link-color: var(--purple);
 
@@ -77,8 +77,8 @@ hr {
   display: table;
   padding: 0;
   border-width: 3px;
-  line-height: 1.2;
-  font-size: 14px;
+  line-height: 1.25;
+  font-size: 12px;
 
   ul {
     padding: 0;
@@ -199,6 +199,12 @@ main:not(.home-main) {
   h6 {
     font-family: $lato;
     font-weight: 500;
+  }
+
+  p {
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 18px
   }
 
   h1 {
@@ -413,9 +419,11 @@ main:not(.home-main) {
   }
 
   .ri-description {
-    line-height: 1.8;
-    font-size: 16px;
-    color: $black;
+    
+    margin-top: 5px;
+    line-height: 1.35;
+    font-size: 13px;
+    color: #676767;
 
     @include dark {
       color: $white;
