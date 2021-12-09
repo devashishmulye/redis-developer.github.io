@@ -86,7 +86,9 @@ hr {
 
   li {
     margin-right: 0;
-    line-height: 1.5;
+    line-height: 1.2;
+    color: #e5e5e5;
+    margin-bottom: 2px;
   }
 
   &__link {
@@ -202,8 +204,8 @@ main:not(.home-main) {
   }
 
   p {
-    line-height: 1.4;
-    font-size: 16px;
+    line-height: 1.5;
+    font-size: 15px;
     margin: 18px
   }
 
@@ -263,6 +265,11 @@ main:not(.home-main) {
     @include mobile {
       font-size: 16px;
     }
+  }
+
+  li {
+  line-height: 1.6;
+  font-size: 15px;
   }
 
   > img,
