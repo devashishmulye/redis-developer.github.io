@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="48px" height="48px">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="86.001251" y1="14.33402" x2="85.998749" y2="157.665985" gradientTransform="matrix(0.27907,0,0,0.27907,0,0)">
+<stop offset="0" style="stop-color:rgb(20%,94.117647%,40.784314%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(0%,76.862746%,34.901962%);stop-opacity:1;"/>
+</linearGradient>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="48" height="48" style="fill:rgb(0%,0%,0%);fill-opacity:0.05;stroke:none;"/>
+  </g>
+</mask>
+<image id="image13826429" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAAsklEQVRoge3XPQrCQBRF4ROtJLaSNYmt+wtuwVJtshZdhc1YhDQhgUlm8M0L94Ppz4X8goiIiIjIllVAYx2R4gYE4A4cjFtW+dIPCMALhyPC6HTA0bRoofGAYURtGbXE1IAiRlyAD/OBMeeJ4T3xjggsekSO+OE8gP1/8/MOCMB1TcQuZYF37i8h9zfxmfQRpo/RWMW+yGK5jgfn8bCBz+mWPt7tD00FnKwjRERERETy+wEFOLGPdu5c5QAAAABJRU5ErkJggg=="/>
+<mask id="mask1">
+  <g filter="url(#alpha)">
+<rect x="0" y="0" width="48" height="48" style="fill:rgb(0%,0%,0%);fill-opacity:0.07;stroke:none;"/>
+  </g>
+</mask>
+<image id="image13826432" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABAklEQVRoge3WPUrEQBQA4G8XG3tlV+xUUBBPoI16C7H1DLZ7EG8iopcQLaw1XsBWi2TBn8BK3pCkeB+EgTDz5j3ImwwppZRSSimlEdvEAjtDJ9LVNT7xioPSwaelA7ZYb8YtPOCwZPA+CvhuhjsFi+i7AAoXsRZYO8UFtlfMO255N8MtzvAcyCHkUt2ckedNsLEjn9BeZOPGHPfY7xpgiB74bY6brovHUEDIGAqocNV1caSAl8DapUrwJJoENp+oj9GjFfNOtB+ly+SfAjn0YuHv8Vkp9CMbogfecY7HEsH6LqBo8sSuEv/10YwVTg14dehqQ90Hu0MnklJKKaWUUvrhC1tJMJ0c3ftPAAAAAElFTkSuQmCC"/>
+</defs>
+<g id="surface13826425">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 38.140625 38.140625 C 30.332031 45.953125 17.667969 45.953125 9.859375 38.140625 C 2.046875 30.332031 2.046875 17.667969 9.859375 9.859375 C 17.667969 2.046875 30.332031 2.046875 38.140625 9.859375 C 45.953125 17.667969 45.953125 30.332031 38.140625 38.140625 Z M 38.140625 38.140625 "/>
+<use xlink:href="#image13826429" mask="url(#mask0)"/>
+<use xlink:href="#image13826432" mask="url(#mask1)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 25 16.605469 L 25 21 L 16 21 C 15.449219 21 15 21.449219 15 22 L 15 26 C 15 26.550781 15.449219 27 16 27 L 25 27 L 25 31.394531 C 25 31.933594 25.652344 32.203125 26.035156 31.820312 L 32.996094 24.855469 C 33.472656 24.382812 33.472656 23.617188 32.996094 23.144531 L 26.035156 16.179688 C 25.652344 15.796875 25 16.066406 25 16.605469 Z M 25 16.605469 "/>
+</g>
+</svg>
