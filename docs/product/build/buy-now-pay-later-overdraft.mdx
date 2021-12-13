@@ -6,6 +6,8 @@ hide_table_of_contents: false
 ---
 import RedisCard from "@site/src/theme/RedisCard";
 import CenteredImage from "@site/src/theme/Images/CenteredImage";
+import ImageRow from "@site/src/theme/Images/ImageRow";
+
 
 ## Introduction to Buy-Now, Pay-Later Overdraft
 
@@ -24,15 +26,13 @@ This helps you improve your GMV, AOV, Wallet Share, CLTV, and customer acquisiti
 
 ## User journey
 
-### Step 1 - User applies for an overdraft account
-***The user is shown an offer to apply for an overdraft account*** - The first step in the user journey is applying for an overdraft account which powers the Buy-Now, Pay-Later. The user will first see the option to activate his overdraft account via a banner in the anchor app.
+### Part 1 - User applies for an overdraft account
 
-***User shares his data and his eligibility is checked*** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
+1. **User is shown an offer to apply for an overdraft account** - The first step in the user journey is applying for an overdraft account which powers the Buy-Now, Pay-Later. The user will first see the option to activate his overdraft account via a banner in the anchor app.
 
-<CenteredImage  imgSrc={"/static/img/bnpl-overdraft.jpg" } text="User is shown his eligibilty" imgWidth="40%"/>
+2. **User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
 
-***E-KYC*** 
-Following this the user completes his eKYC by submitting his
+3. **E-KYC**  Following this the user completes his eKYC by submitting his
 *PAN Card
 *Address proof (Aadhaar or Passport)
 *Selfie
@@ -53,7 +53,7 @@ make instant transactions on credit
 
 ### Step 3 - Repayment
 
-Users can repay from within the app.
+EMI amount is auto-debited using eNACH or Mandate however users can repay from within the app.
 
 
 
