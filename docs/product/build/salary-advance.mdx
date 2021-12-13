@@ -18,15 +18,16 @@ FinBox Salary Advance stack enables you to offer advance salary to the users fro
 
 ## User journey
 
-### Step 1 - Applying for Instant Loan
+### Part 1 - Applying for Loan
 
-**User is shown an offer to apply for an advance salary in the anchor app** - The first step in the user journey is applying for loan 
+**User is shown a hook offer to apply for a loan** - The first step in the user journey is applying for loan
 
-**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements
+**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements. Only DeviceConnect and bureau data is used for checking the eligibility.
 
-**Loan offer is shown** Then loan offer is shown and the credit line is activated.
+**Showing Final Offer** - After checking the eligibility final loan offer is shown to the user. In this can chose tenure and loan amount
 
-**Bank Details** - Then user is asked for bank account details
+**Bank Details** - Then user is asked for bank account details and we do penny drop to verify.
+
 
 **E-KYC**
 Following this the user completes his eKYC by submitting his 
@@ -34,20 +35,21 @@ Following this the user completes his eKYC by submitting his
 * Address proof  (Aadhaar or Passport)
 * Selfie 
 
-**Completes the application process** - User e-signs a loan agreement and the application journey is completed.
+**Sets up ENACH** - User sets up autopay. There are 2 ways of doing so depending on the bank - 
+* E-NACH
+* Manual NACH
 
-Users will see Get Instant Loan option in the Anchor app. They can select their preferred loan amount. Loan amount will be transferred to their bank account. 
+**Completes the application process** - User signs a loan agreement and completes the application journey.
 
-:::warning Employee manager needs to approve the loan amount, then it will be sanctioned.
-:::
+The loan amount is transferred to users’ bank account and they can use it at their own convenience.
 
-### Step 2 - Repayment
+### Part 2 - Repayment
 
-EMI will be auto-debited from their salary.
+1. EMI will be auto-debited from their salary.
+2. They can pay the EMI from app.
+## Key Features
 
-## Features
-
-* The loan amount will be less than their salary
-* Loan will be sanctioned only when employer approves the loan
-
+* Can pay the EMI before the due date.
+* KYC is done within seconds
+* Employee Manager decides weather to lend loan or not.
 

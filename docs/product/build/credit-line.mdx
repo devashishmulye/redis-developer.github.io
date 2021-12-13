@@ -5,14 +5,17 @@ slug: credit-line
 hide_table_of_contents: false
 ---
 
+
 import RedisCard from "@site/src/theme/RedisCard";
 import CenteredImage from "@site/src/theme/Images/CenteredImage";
+import ImageRow from "@site/src/theme/Images/ImageRow";
+
 
 
 
 ## Introduction to Credit Line
 
-FinBox Credit Line enables you to offer loans inside your platform. It is a fully managed end-to-end lending journey. On activating a credit line, your customers can withdraw money within the credit limit and start purchasing on credit instantly. 
+[FinBox Buy-Now, Pay-Later stack](/product/products/buy-now-pay-later-stack) enables you to offer BNPL at checkout inside your platform. It is a fully managed end-to-end lending journey. Through this offering, you customers can activate a credit line and start purchasing on credit instantly. 
 
 This helps you [improve your GMV](https://finbox.in/blog/buy-now-pay-later-b2b-credit-payment-option-ecommerce-msme/), AOV, Wallet Share, CLTV, and customer acquisition
 
@@ -28,78 +31,50 @@ This helps you [improve your GMV](https://finbox.in/blog/buy-now-pay-later-b2b-c
 
 ## User journey
 
-### Step 1 - User applies for a credit line
+### Part 1 - User applies for a credit line
 
-**User is shown an offer to apply for a credit line** - The first step in the user journey is applying for a credit limit which powers the Buy-Now, Pay-Later. The user will first see the option to activate his credit line via a banner in the anchor app.
+1. **User is shown an offer to apply for a credit line** - The first step in the user journey is applying for a credit limit which powers the Buy-Now, Pay-Later. The user will first see the option to activate his credit line via a banner in the anchor app.
+2. **User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
+3. **E-KYC** - Following this the user completes his eKYC by submitting his 
+    * PAN Card
+    * Address proof  (Aadhaar or Passport)
+    * Selfie 
+    * Business registration proof.
+4. **Completes the application process** - User e-signs a loan agreement and the application journey is completed.
 
-
-<CenteredImage  imgSrc={"/img/credit_line_intro_banner.png" } text="A B2B E-Commerce app offering Buy Now Pay Later option at checkout" imgWidth="35%"/>
-
-**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
-
-
-<CenteredImage  imgSrc={"/img/eligibility_screen.png" } text="User is shown his eligibilty" imgWidth="35%"/>
-
-
-**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
-
-
-
-**E-KYC**
-Following this the user completes his eKYC by submitting his 
-* PAN Card
-* Address proof  (Aadhaar or Passport)
-* Selfie 
-* Business registration proof.
-
-<CenteredImage  imgSrc={"/img/ekyc.png" } text="User is shown his eligibilty" imgWidth="35%"/>
-
-
-**Sets up ENACH** - User sets up his Enach. There are 2 ways of doing so - 
-* E-NACH
-* Manual NACH
-
-**Completes the application process** - User e-signs a loan agreement and the application journey is completed.
-
-<CenteredImage  imgSrc={"/img/credit_line.png" } text=" " imgWidth="40%"/>
+<ImageRow
+ images={[
+     {
+         img:"/img/credit_line_intro_banner.png",
+         subtext:"User is shown a banner in Anchor App"
+     },
+     {
+         img:"/img/eligibility_screen.png",
+         subtext:"User is shown eligibility"
+     },
+     {
+         img:"/img/ekyc.png",
+         subtext:"User is asked to provide details for eKYC"
+     },
+ ]}
+ />
 
 
-### Step 2 - Making Transactions
 
 
-Users will see option of using Credit Line as a payment option in the Anchor app's checkout page. They can select their preferred repayment plan and 
-make instant transactions on credit
+
+### Part 2 - Making Transactions
+
+
+1. **See Credit Line option at checkout** - Users will see Credit Line as a payment option in the Anchor app's checkout page. 
+2. **Select repayment plan** -They can select their preferred repayment plan and make instant transactions on credit
 
 
 <CenteredImage  imgSrc={"/img/checkout.png" } text="User is shown a BNPL option at the checkout screen" imgWidth="35%"/>
 
 
-### Step 3 - Repayment
+### Part 3 - Repayment
 
-User can repay from within the app.
+1. EMI amount is auto-debited using eNACH or Mandate
+2. Users can repay from within the app
 
-## Key Features
-
-**We Approve NTC customers** - For NTC(New to credit) users we use alternate data for underwriting. We get alternate data using device connect and also from partners.
-
-**Adaptive Journey** - The user onboarding journey is configurable. If the user has thin data, he can choose to share his bank statement. In case he has enough data, we don't require his Bank Statement. 
-
-:::warning We collect the bank statement through out own product called [BankConnect](/product/products/bank-connect)
-BankConnect enables users to submit their bank statement via one of 3 modes - 
-* Account Aggregator
-* Uploading PDF of their bank statement
-* By netbanking
-:::
-
-
-**no-code integartion for Pilots** - 
-
-**Configurable and white labeled ** - Anchor platforms can change the look and feel of the UI as per their branding and target demographic.
-
-**Prequalification** - . So even before the customers apply, we pre-qualify customers based on the device data (alternate data) and data coming from the partner.
-
-**Credit scoring NTCs** - Our Alternative data-based underwriting scorecards from mobile device data enable us to approve New-to-Credit customers
-
-**Account Aggregator Integration** - enables users to connect their bank account data with us in a safe and consent-driven way.
-
- 
