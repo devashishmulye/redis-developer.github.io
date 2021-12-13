@@ -7,6 +7,10 @@ hide_table_of_contents: false
 
 import RedisCard from "@site/src/theme/RedisCard";
 import CenteredImage from "@site/src/theme/Images/CenteredImage";
+import ImageRow from "@site/src/theme/Images/ImageRow";
+
+
+
 
 ## Introduction to Buy-Now, Pay-Later
 
@@ -27,44 +31,44 @@ This helps you [improve your GMV](https://finbox.in/blog/buy-now-pay-later-b2b-c
 
 ## User journey
 
-### Step 1 - User applies for a credit line
+### Part 1 - User applies for a credit line
 
-**User is shown an offer to apply for a credit line** - The first step in the user journey is applying for a credit limit which powers the Buy-Now, Pay-Later. The user will first see the option to activate his credit line via a banner in the anchor app.
+1. **User is shown an offer to apply for a credit line** - The first step in the user journey is applying for a credit limit which powers the Buy-Now, Pay-Later. The user will first see the option to activate his credit line via a banner in the anchor app.
+2. **User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
+3. **User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
+4. **E-KYC** - Following this the user completes his eKYC by submitting his 
+    * PAN Card
+    * Address proof  (Aadhaar or Passport)
+    * Selfie 
+    * Business registration proof.
+5. **Completes the application process** - User e-signs a loan agreement and the application journey is completed.
 
-
-<CenteredImage  imgSrc={"/img/credit_line_intro_banner.png" } text="A B2B E-Commerce app offering Buy Now Pay Later option at checkout" imgWidth="35%"/>
-
-**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
-
-
-<CenteredImage  imgSrc={"/img/eligibility_screen.png" } text="User is shown his eligibilty" imgWidth="35%"/>
-
-
-**User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements, GST (if applicable)
-
-
-**E-KYC**
-Following this the user completes his eKYC by submitting his 
-* PAN Card
-* Address proof  (Aadhaar or Passport)
-* Selfie 
-* Business registration proof.
-
-<CenteredImage  imgSrc={"/img/ekyc.png" } text="User is shown his eligibilty" imgWidth="35%"/>
-
-
-**Sets up ENACH** - User sets up his Enach. There are 2 ways of doing so - 
-* E-NACH
-* Manual NACH
-
-**Completes the application process** - User e-signs a loan agreement and the application journey is completed.
+<ImageRow
+ images={[
+     {
+         img:"/img/credit_line_intro_banner.png",
+         subtext:"lkndfsalkn"
+     },
+     {
+         img:"/img/eligibility_screen.png",
+         subtext:"flkasnflka"
+     },
+     {
+         img:"/img/ekyc.png",
+         subtext:"faskbjk"
+     },
+ ]}
+ />
 
 
-### Step 2 - Making Transactions
 
 
-Users will see BNPL as a payment option in the Anchor app's checkout page. They can select their preferred repayment plan and 
-make instant transactions on credit
+
+### Part 2 - Making Transactions
+
+
+1. **See BNPL option at checkout** - Users will see BNPL as a payment option in the Anchor app's checkout page. 
+2. **Select repayment plan** -They can select their preferred repayment plan and make instant transactions on credit
 
 
 <CenteredImage  imgSrc={"/img/checkout.png" } text="User is shown a BNPL option at the checkout screen" imgWidth="35%"/>
