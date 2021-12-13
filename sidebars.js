@@ -157,16 +157,11 @@ ProductOverview: { 'FinBox Overview' : [
     items: [
       'product/build/buy-now-pay-later',
       'product/build/buy-now-pay-later-overdraft',
-      'product/build/pay-in-n-days',
-      'product/build/khata-receivable',
-      'product/build/closed-loop-invoice-financing',
-      'product/build/pay-in-n-installments',
       'product/build/working-capital',
       'product/build/term-loans',
       'product/build/credit-line',
       'product/build/salary-advance',
       'product/build/personal-loans',
-      'product/build/what-cant-you-build',
     ]
   },
   {
@@ -187,11 +182,9 @@ ProductOverview: { 'FinBox Overview' : [
     label: 'Product suite',
     items: [
       'product/products/buy-now-pay-later-stack',
-      'product/products/cashflow-based-lending-stack',
       'product/products/collect-x',
       'product/products/no-code-credit-link',
       'product/products/risk-engine',
-      'product/products/supply-chain-finance-stack',
       'product/products/bank-connect',
       'product/products/device-connect',
     ]
