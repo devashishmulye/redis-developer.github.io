@@ -8,47 +8,50 @@ hide_table_of_contents: false
 import RedisCard from "@site/src/theme/RedisCard";
 import CenteredImage from "@site/src/theme/Images/CenteredImage";
 
-FinBox provides adaptive journeys to onboard customers onto a credit product. 
+Customer onboarding refers to the process of acquiring new customers and processing their application.FinBox provides adaptive journeys to onboard customers onto a credit product. 
+
+Onboarding involves collecting key information about the customer which enables financial institutions and FinTechs to verify the borrower's identity and assess his credit worthiness.
 
 
-## Customer onboarding
+## Here are the activities involved in onboarding a customer
 
-- We show banners in the anchor app.
-- Via marketing campaign
+* Running marketing campaigns to attract new customers
+* Showing banners in your platform to apply for a loan.
+* Facilitating flow of data for underwriting   
+    * Bureau Data
+    * Alternate Data such as device data, bank statements, GST Data, cash-flow data
+    * Bank details, PAN card, phone number and other personal details for identity verification
+* Identity and Document checks - There are various checks in place to ensure consistant and authentic information is submitted by the user
+* Confirmation calls from the lender, platform to personally inform the user of the terms of credit and repayment plans.
 
-Customers who are in need of loan are onboarded via our anchor apps. We ask for thier bank statements and device data to check thier credit history and eligibility. We underwrite alternate data to analyse the risks involved. Lenders use this data to provide credit.
+
+## Adaptive Journeys
+However the journey is adaptive, so we only collect as much as we need. Borrowers are onboarded as per their creditworthiness. 
+Premium borrowers will be onboarded in fewer steps. 
+Thin-file customers will have the option to share their data through various ways to acquire the loan.
+
+This ensures -
+* 50% fewer drop-offs.
+* 30% fewer NPAs
+* Lower overall CAC
+* Higher CLTVs
 
 
-## Application Process
-
-* We ask users for their bank details, PAN card, phone number and other personal details. 
-* We fetch credit score from bureau
-* We collect alternative data using our product DeviceConnect, which is used for underwriting.
-* Anchor apps give thier Platform Data 
-* We ask user to upload Bank Statement using our product BankConnect 
-
-However the journey is adaptive, so we only collect as much as we need.
-
-## Adaptive Journey 
-
-We show him a eligibility screen
 
 <CenteredImage  imgSrc={"/img/eligibility-screen.png" } text="Linking Bank Account" imgWidth="35%"/>
-
-Then User completes
-
-- eKYC
-- eNACH
-- PennyDrop
-- eSign
-
-User is shown an offer.
 
 
 ## Assisted Journey
 
-* In assisted journey we autofill all the data required for loan application using the platform data that our partner has shared with us.
-* Then we send a link to user to complete eKYC and accept the loan offer by digitally signing the agreement.
+Assisted Journey is a form of onboarding in which we have minimised the effort that has to be undertaken by the borrower.
+
+* We collect information about the borrower that our anchor partners already have.
+* We autofill all the loan application based on this data.
+* The borrower only has to complete eKYC and accept and digitally sign the agreement.
+
+This drastically reduces drop-offs and TAT of the onboarding process.
+
+
 
 
 
