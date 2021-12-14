@@ -49,6 +49,14 @@ module.exports = {
       },
       hideOnScroll: false,
       items: [
+
+        {
+          to: '/finbox-overview/',
+          activeBasePath: 'docs',
+          label: 'Home',
+          position: 'right',
+        },
+
         {
           to: '/bank-connect/',
           activeBasePath: 'docs',

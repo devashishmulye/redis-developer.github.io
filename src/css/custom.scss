@@ -102,6 +102,9 @@ html[data-theme="dark"] {
   .pagination-nav__sublabel {
     color: var(--ifm-color-primary);
   }
+  
+  
+
   &:hover {
     background-color: var(--ifm-color-primary);
     border: 1px solid var(--ifm-color-primary);
@@ -111,6 +114,7 @@ html[data-theme="dark"] {
     }
   }
 }
+
 
 .markdown h2 {
   font-weight: 600;
