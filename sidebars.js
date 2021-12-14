@@ -205,8 +205,12 @@ ProductOverview: { 'FinBox Overview' : [
     ]
   },
   'product/pm-checklist',
-
-  '/embedded-finance/'
+  {
+    type: 'link',
+    label: 'Developer Documentation',
+    href: '/embedded-finance',
+  },
+ 
 
   
 
