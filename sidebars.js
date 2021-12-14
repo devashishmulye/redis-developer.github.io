@@ -182,11 +182,13 @@ ProductOverview: { 'FinBox Overview' : [
     label: 'Product suite',
     items: [
       'product/products/buy-now-pay-later-stack',
-      'product/products/collect-x',
+      'product/products/cashflow-based-lending-stack',
+      'product/products/supply-chain-finance-stack',
       'product/products/no-code-credit-link',
       'product/products/risk-engine',
-      'product/products/bank-connect',
+      'product/products/collect-x',
       'product/products/device-connect',
+      'product/products/bank-connect',
     ]
   },
   'product/integrations',
