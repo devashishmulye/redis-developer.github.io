@@ -66,12 +66,11 @@
     &:hover {
       text-decoration: underline;
     }
+    // &:active{
+    //   color: red !important;
+    // }
   }
-  // &:active{
-  //   padding: 7px 21px 8px;
-  // line-height: 1;
-  // font-size: 50px;
-  // }
+ 
   .DocSearch-Button-Container {
     @include mobile {
       justify-content: center;

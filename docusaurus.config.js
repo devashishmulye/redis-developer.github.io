@@ -49,29 +49,28 @@ module.exports = {
       },
       hideOnScroll: false,
       items: [
-
         {
           to: '/finbox-overview/',
           activeBasePath: 'docs',
           label: 'Home',
-          position: 'right',
+          position: 'left',
         },
 
         {
           to: '/bank-connect/',
           activeBasePath: 'docs',
           label: 'BankConnect',
-          position: 'right',
+          position: 'left',
         },
         {
           to: '/device-connect/',
           label: 'DeviceConnect',
-          position: 'right',
+          position: 'left',
         },
         {
           to: '/embedded-finance/',
           label: 'Embedded Finance Platform',
-          position: 'right',
+          position: 'left',
         },
       ],
     },

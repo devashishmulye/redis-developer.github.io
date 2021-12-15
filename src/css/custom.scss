@@ -97,7 +97,7 @@ html[data-theme="dark"] {
 
 .pagination-nav__link {
   background-color: white;
-  border: 1px solid var(--ifm-color-primary);
+  //border: 1px solid var(--ifm-color-primary);
   .pagination-nav__label,
   .pagination-nav__sublabel {
     color: var(--ifm-color-primary);
@@ -106,12 +106,11 @@ html[data-theme="dark"] {
   
 
   &:hover {
-    background-color: var(--ifm-color-primary);
-    border: 1px solid var(--ifm-color-primary);
     .pagination-nav__label,
     .pagination-nav__sublabel {
-      color: white;
+      color: var(--ifm-color-primary);
     }
+    text-decoration-color:var(--ifm-color-primary) !important ;
   }
 }
 
