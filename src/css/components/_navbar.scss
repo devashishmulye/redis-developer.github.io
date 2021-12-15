@@ -62,11 +62,15 @@
     font-size: 17px;
     color: #474C5F !important;
 
+    
     &:hover {
       text-decoration: underline;
     }
+    // &:active{
+    //   color: red !important;
+    // }
   }
-
+ 
   .DocSearch-Button-Container {
     @include mobile {
       justify-content: center;
