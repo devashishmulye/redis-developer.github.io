@@ -69,10 +69,9 @@
     &:hover {
       text-decoration: underline;
     }
-    // &:active{
-    //   color: red !important;
-    // }
+    
   }
+
  
   .DocSearch-Button-Container {
     @include mobile {
@@ -114,5 +113,12 @@
         margin-right: 0;
       }
     }
+  }
+  .navbar__link--active{
+    color: var(--ifm-color-primary) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
   }
 }
