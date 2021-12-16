@@ -3,7 +3,7 @@
 }
 
 .navbar-sidebar {
-  background-color: $primary-black;
+  background-color: #FFFFFF;
   box-shadow: none;
 
   &__backdrop {
@@ -35,6 +35,9 @@
       background-color: transparent;
       font-size: 17px;  
       color: $white;
+    }
+    .menu__link{
+      color: #000;
     }
   }
 }
