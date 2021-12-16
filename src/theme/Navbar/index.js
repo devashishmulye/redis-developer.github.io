@@ -82,7 +82,7 @@ function Navbar() {
       <div className="navbar__inner">
         <div className="navbar__items">
           {items != null && items.length !== 0 && <div aria-label="Navigation bar toggle" className="navbar__toggle" role="button" tabIndex={0} onClick={showSidebar} onKeyDown={showSidebar}>
-              <SvgHamburger color="#FFFFFF" />
+              <SvgHamburger color="#000" />
             </div>}
           <Logo className="navbar__brand" imageClassName="navbar__logo" titleClassName={clsx('navbar__title', {
           [styles.hideLogoText]: isSearchBarExpanded
