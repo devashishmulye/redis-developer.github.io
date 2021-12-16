@@ -94,7 +94,7 @@ hr {
   &__link {
     &:hover {
       // color: $purple;
-      // text-decoration: underline;
+      text-decoration: underline;
     }
 
     &--active {
@@ -139,13 +139,15 @@ hr {
 
   > li > ul > li > .table-of-contents__link--active:before {
     left: -33px;
+  
   }
 
   > li > ul > li > ul > li > .table-of-contents__link--active:before {
     left: -48px;
+
   }
   .table-of-contents__link:hover{
-    text-decoration: none !important;
+    text-decoration: underline !important;
     color: #000;
   }
 }
@@ -325,10 +327,10 @@ main:not(.home-main) {
     color: $white;
     transition: background-color 0.2s ease-in-out;
 
-    &:hover {
-      //background-color: $purple-hover;
-      // text-decoration: underline;
-    }
+    // &:hover {
+    //   //background-color: $purple-hover;
+    //   // text-decoration: underline;
+    // }
   }
 
   &__sublabel {

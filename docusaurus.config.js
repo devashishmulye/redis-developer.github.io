@@ -51,14 +51,12 @@ module.exports = {
       items: [
         {
           to: '/finbox-overview/',
-          activeBasePath: 'docs',
           label: 'Home',
           position: 'left',
         },
 
         {
           to: '/bank-connect/',
-          activeBasePath: 'docs',
           label: 'BankConnect',
           position: 'left',
         },
