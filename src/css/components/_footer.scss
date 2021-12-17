@@ -47,6 +47,10 @@
   &__logo-ctr { margin-top: -3px; }
 
   &__logo-tagline { font-family: $roboto; font-weight: 600; margin-left: 5px; color: #e4e4e4;opacity: 0.54;
+    a{
+      color: red;
+      opacity: 1;
+    }
   }
 
   &__logo {

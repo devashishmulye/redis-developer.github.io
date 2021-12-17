@@ -67,7 +67,7 @@ function Footer() {
           <div className="col col--3">
 
             {logo && logo.src && <div className="footer__logo-ctr">
-                <span className="footer__logo-tagline">Made with &lt;/&gt; by</span>
+                <span className="footer__logo-tagline">Made with <a>♥</a> by</span>
                 {logo.href ? <a href={logo.href} target="_blank" rel="noopener" className={styles.footerLogoLink}>
                     <FooterLogo alt={logo.alt} url={logoUrl} />
                   </a> : <FooterLogo alt={logo.alt} url={logoUrl} />}

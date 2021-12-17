@@ -5,7 +5,9 @@ slug: personal-loans
 hide_table_of_contents: false
 ---
 
-import RedisCard from "@site/src/theme/RedisCard";
+import RedisCard from "@site/src/theme/RedisCard"
+import CenteredImage from "@site/src/theme/Images/CenteredImage";
+import ImageRow from "@site/src/theme/Images/ImageRow";
 
 ## Introduction to Personal Loans
 
@@ -27,6 +29,10 @@ FinBox Personal Loans stack enables you to offer personal loans to users on your
 ### Part 1 - Applying for Loan
 
 1. **User is shown a banner to apply for a personal loan** - The user applies for a personal loan. 
+
+<CenteredImage  imgSrc={"/img/get_business_loan_screen.png" } text="A platform offering Personal Loan" imgWidth="35%"/>
+
+
 2. **User shares his data and his eligibility is checked** - The user shares his Credit History, Device Data, Bank Statements.
 4. **Bank Details** - Then user is asked for bank account details and we do penny drop to verify.
 5. **User completes E-KYC** - Following this the user completes his eKYC by submitting his 
@@ -39,10 +45,32 @@ FinBox Personal Loans stack enables you to offer personal loans to users on your
 7. **User signs the loan agreement** - User signs a loan agreement and completes the application journey.
 8. **Loan Disbursal is done** - The loan amount is transferred to users’ bank account and they can use it at their own convenience.
 
+
+<ImageRow
+ images={[
+  
+     {
+         img:"/img/Loan offer.png",
+         subtext:"User is shown eligibility"
+     },
+    {
+         img:"/img/KYC.png",
+         subtext:"User is asked to provide details for eKYC"
+     },
+     {
+         img:"/img/Loan disbursed.png",
+         subtext:"Loan Disbursed",
+     },
+ ]}
+ />
+
 ### Part 2 - Repayment
 
 1. **Repayment is done by NACH**
 2. **User can also pay the EMI  efore the due date from app.**
+
+<CenteredImage  imgSrc={"/img/Active loans.png" } text="Loan Status" imgWidth="35%"/>
+
 
 
 
