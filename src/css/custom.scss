@@ -38,6 +38,7 @@
   --ifm-line-height-base: 1.85;
   --ifm-heading-vertical-rhythm-bottom: 1px;
 
+
   --ifm-color-success: #24ca7a;
   --ifm-background-color-success: #f3f5f7;
 
@@ -49,6 +50,7 @@
   --ifm-transition-timing-default: ease-in-out;
 
   --ifm-global-radius: 10px;
+  --ifm-link-color:var(--purple);
   
 
   // custom
@@ -74,7 +76,7 @@ html[data-theme="dark"] {
   --ifm-alert-border-color: var(--ifm-color-success);
   .admonition-content {
     a {
-      color: var(--link);
+     color: var(--ifm-link-color);
     }
   }
 }
@@ -90,7 +92,7 @@ html[data-theme="dark"] {
   }
   .admonition-content {
     a {
-      color: var(--link);
+      color: var(--ifm-link-color);
     }
   }
 }
