@@ -50,7 +50,7 @@ module.exports = {
       hideOnScroll: false,
       items: [
         {
-          to: '/finbox-overview/',
+          to: '/',
           label: 'Home',
           position: 'left',
         },
