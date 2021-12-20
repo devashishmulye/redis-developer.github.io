@@ -42,10 +42,10 @@
 }
 
 .navbar {
-  padding: 14px 15px;
+  padding: 0px 15px;
   height: auto;
   border-radius: 0 0 10px 10px;
-  background-color: transparent;
+  background-color: white;
   box-shadow: none;
 
   &__toggle {
@@ -123,14 +123,25 @@
       height: 2px;
       background: var(--ifm-color-primary);
       position: absolute;
-      bottom: 3px;
+      bottom: 15px;
       left: 22px;
       width: 25%;
     }
   }
 
   .navbar__brand {
-    width: calc(var(--doc-sidebar-width) - 10px) !important;
+    width: var(--doc-sidebar-width) !important;
+    margin-left: -15px;
     margin-right: 0px;
+    background: #f4f4f4;
+    padding: 14px 0px;
+    // padding: 23px 21px !important;
+    img {
+      margin-left: 15px;
+    }
+  }
+
+  .navbar__link {
+    padding: 23px 21px !important;
   }
 }
