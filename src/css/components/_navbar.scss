@@ -1,13 +1,13 @@
 .navbar-sidebar--show .navbar-sidebar {
-  box-shadow: 0 5px 40px rgba($primary-black, .5);
+  box-shadow: 0 5px 40px rgba($primary-black, 0.5);
 }
 
 .navbar-sidebar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: none;
 
   &__backdrop {
-    background-color: rgba($primary-blue, .5);
+    background-color: rgba($primary-blue, 0.5);
   }
 
   &__brand {
@@ -20,7 +20,6 @@
   }
 
   .menu {
-
     &__list-item {
       margin: 0;
 
@@ -33,10 +32,10 @@
       padding: 5px 15px;
       border-radius: 0;
       background-color: transparent;
-      font-size: 17px;  
+      font-size: 17px;
       color: $white;
     }
-    .menu__link{
+    .menu__link {
       color: #000;
     }
   }
@@ -46,7 +45,7 @@
   padding: 14px 15px;
   height: auto;
   border-radius: 0 0 10px 10px;
-  background-color: #F8FAFC;
+  background-color: transparent;
   box-shadow: none;
 
   &__toggle {
@@ -63,16 +62,13 @@
     padding: 7px 21px 8px;
     line-height: 1;
     font-size: 17px;
-    color: #474C5F !important;
+    color: #474c5f !important;
 
-    
     &:hover {
       text-decoration: underline;
     }
-    
   }
 
- 
   .DocSearch-Button-Container {
     @include mobile {
       justify-content: center;
@@ -114,11 +110,27 @@
       }
     }
   }
-  .navbar__link--active{
+
+  .navbar__link--active {
     color: var(--ifm-color-primary) !important;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+    position: relative;
+    &::after {
+      content: " ";
+      border-radius: 4px;
+      height: 2px;
+      background: var(--ifm-color-primary);
+      position: absolute;
+      bottom: 3px;
+      left: 22px;
+      width: 25%;
+    }
   }
 
+  .navbar__brand {
+    width: calc(var(--doc-sidebar-width) - 10px) !important;
+    margin-right: 0px;
+  }
 }
