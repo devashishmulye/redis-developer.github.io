@@ -110,6 +110,8 @@
   width: 24px;
 }
 
+
+
 :global(.menu__list) :global(.menu__list) {
   overflow-y: hidden;
   will-change: height;
