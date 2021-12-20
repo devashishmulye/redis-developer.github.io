@@ -177,6 +177,7 @@ function DocItem(props: Props): JSX.Element {
         </div>
         {!hideTableOfContents && DocContent.toc && (
           <div className="col col--3">
+            <h4 className='table-heading'>Contents</h4>
             <TOC toc={DocContent.toc} />
           </div>
         )}
@@ -186,3 +187,4 @@ function DocItem(props: Props): JSX.Element {
 }
 
 export default DocItem;
+

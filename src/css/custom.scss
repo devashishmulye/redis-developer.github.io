@@ -71,12 +71,16 @@ html[data-theme="dark"] {
   overflow: hidden;
 }
 
+.alert a{
+  color: var(--link) !important;
+}
+
 .alert--success {
   --ifm-alert-background-color: var(--ifm-background-color-success);
   --ifm-alert-border-color: var(--ifm-color-success);
   .admonition-content {
     a {
-     color: var(--ifm-link-color);
+     color: var(--ifm-alert-color);
     }
   }
 }
@@ -92,7 +96,7 @@ html[data-theme="dark"] {
   }
   .admonition-content {
     a {
-      color: var(--ifm-link-color);
+      color: var(--ifm-alert-color);
     }
   }
 }

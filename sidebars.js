@@ -185,10 +185,10 @@ ProductOverview: { 'FinBox Overview' : [
       // 'product/products/cashflow-based-lending-stack',
       // 'product/products/supply-chain-finance-stack',
       'product/products/no-code-credit-link',
-      'product/products/risk-engine',
-      'product/products/collect-x',
       'product/products/device-connect',
       'product/products/bank-connect',
+      'product/products/risk-engine',
+      'product/products/collect-x',
     ]
   },
   'product/integrations',
