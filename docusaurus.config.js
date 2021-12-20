@@ -70,6 +70,7 @@ module.exports = {
           label: 'Embedded Finance Platform',
           position: 'left',
         },
+    
       ],
     },
     footer: {

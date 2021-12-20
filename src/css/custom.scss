@@ -163,6 +163,8 @@ html[data-theme="dark"] {
 .menu__link--active {
   background: white !important;
   border-radius: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .menu {
@@ -171,4 +173,5 @@ html[data-theme="dark"] {
 .menu__link--sublist {
   background: #f4f4f4 !important;
   border-radius: 0px;
+
 }
