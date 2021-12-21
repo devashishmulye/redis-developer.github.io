@@ -56,6 +56,12 @@ module.exports = {
         },
 
         {
+          to: '/dev/docs',
+          label: 'Developer Documentation',
+          position: 'left',
+        },
+
+        {
           to: '/bank-connect/',
           label: 'BankConnect',
           position: 'left',
