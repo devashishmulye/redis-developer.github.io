@@ -250,7 +250,7 @@ new FinBoxBankConnect.Builder(getApplicationContext())
 | `linkId` | specifies the `link_id` | Yes |
 | `fromDate` | specifies the starting period of the statement in `dd/MM/yyyy` format | No |
 | `toDate` | specifies the end period of the statement in `dd/MM/yyyy` format | No |
-| `bank` | pass the [bank identifier](/bank-connect/appendix.html#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No |
+| `bank` | pass the [bank identifier](/bank-connect/appendix#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No |
 
 `fromDate` and `toDate` specify the period for which the statements will be fetched. For example, if you need the last 6 months of statements, `fromDate` will be today's date - 6 months and `toDate` will be today's date - 1 day. If not provided the default date range is 6 months from the current date. It should be in `dd/MM/yyyy` format.
 
@@ -386,7 +386,7 @@ if (result != null && result.getResultCode() == Activity.RESULT_OK) {
 
 
 :::warning Webhook
-To track detailed errors, and transaction process completion at the server-side, it is recommended to also integrate [Webhook](/bank-connect/webhook.html).
+To track detailed errors, and transaction process completion at the server-side, it is recommended to also integrate [Webhook](/bank-connect/webhook).
 :::
 
 ## Customization

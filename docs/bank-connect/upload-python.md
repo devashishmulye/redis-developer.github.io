@@ -99,7 +99,7 @@ For any entity instance at any point, a PDF statement can be uploaded using the 
 ```python
 is_authentic = entity.upload_statement("path/to/file", bank_name="axis")
 ```
-`bank_name` in the input should be a valid bank name identifier (See [this](/bank-connect/appendix.html#bank-identifiers) for list of valid bank name identifiers).
+`bank_name` in the input should be a valid bank name identifier (See [this](/bank-connect/appendix#bank-identifiers) for list of valid bank name identifiers).
 
 The function returns a boolean value `is_authentic` that is `True` if no fraud were detected in the initial check (pre-transaction-level checks) otherwise `False`. 
 

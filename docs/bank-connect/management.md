@@ -51,7 +51,7 @@ On successful fetching, the API gives a **200 HTTP code** with following respons
 
 | Key | Type | Description |
 | - | - | - | - | - |
-| bank | string  | indicates the bank identifier in upper case, refer [here](/bank-connect/appendix.html#bank-identifiers) for complete list |
+| bank | string  | indicates the bank identifier in upper case, refer [here](/bank-connect/appendix#bank-identifiers) for complete list |
 | updated_at | string | last check date time (in UTC) for bank in `YYYY-MM-DD HH:MM:SS` format |
 | health_up | boolean | indicates whether the bank status is up, `true` indicates bank status is up |
 | issue_details | string | present if `health_up` is `false`, otherwise `null` |

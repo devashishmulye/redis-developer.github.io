@@ -6,7 +6,7 @@ sidebar_label: Javascript Client
 
 The JavaScript Client SDK helps user submit their bank statements via upload or net banking credentials in your Web applications. The SDK will be opened via a web URL.
 
-The first step in integration involves calling the [Session API](/bank-connect/javascript-client.html#session-api)
+The first step in integration involves calling the [Session API](/bank-connect/javascript-client#session-api)
 Then the workflow can be implemented in one of the following ways:
 - [Load in a new page with redirect URL](/bank-connect/javascript-client#redirect-workflow)
 - [Embedding inside an Inline Frame (`<iframe>`)](/bank-connect/javascript-client#inline-frame-workflow)
@@ -37,12 +37,12 @@ POST **{{$page.frontmatter.base_url}}/{{$page.frontmatter.version}}/session/**
 | redirect_url | string | URL to redirect to incase of success or failure | Yes for **Redirect Workflow** | - |
 | from_date | string | Start date range to fetch statements. Should be of format `dd/MM/YYYY` | No | Last 6 month start date |
 | to_date | string | End date range to fetch statements. Should be of format `dd/MM/YYYY` | No | Yesterday |
-| bank_name | string | pass the [bank identifier](/bank-connect/appendix.html#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No | - |
+| bank_name | string | pass the [bank identifier](/bank-connect/appendix#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No | - |
 
 `from_date` and `to_date` specify the period for which the statements will be fetched. For example, if you need the last 6 months of statements, `from_date` will be today's date - 6 months and `to_date` will be today's date - 1 day. If not provided the default date range is 6 months from the current date. It should be in `dd/MM/yyyy` format.
 
 :::warning NOTE
-- `redirect_url` in request is a compulsory field in [Redirect Workflow](/bank-connect/javascript-client.html#redirect-workflow) but is not required with the [Inline Frame workflow](/bank-connect/javascript-client.html#inline-frame-workflow)
+- `redirect_url` in request is a compulsory field in [Redirect Workflow](/bank-connect/javascript-client#redirect-workflow) but is not required with the [Inline Frame workflow](/bank-connect/javascript-client#inline-frame-workflow)
 - Please make sure `from_date` is always less than `to_date`
 - Make sure `to_date` is never today's date, the maximum possible value for it is today's date - 1 day
 :::
@@ -61,14 +61,14 @@ Use `redirect_url` to open up the BankConnect SDK. This URL can be used embedded
 <img src="/img/redirect_workflow_bankconnect.png" alt="JavaScript Client SDK Redirect Workflow" />
 
 The flow for this involves following steps:
-- Create a session using [Session API](/bank-connect/javascript-client.html#session-api)
+- Create a session using [Session API](/bank-connect/javascript-client#session-api)
 - Get the URL received from above API and open it in a new tab
 - On success / exit, Client SDK will redirect to the specified redirect URL with parameters as follows:
   - Exit: `{url}?success=false`
   - Success: `{url}?success=true&entity_id=<some-entity-id>`
 
 :::warning NOTE
-Since there is no callback received on this flow, it is recommended to configure [Webhook](/bank-connect/webhook.html)
+Since there is no callback received on this flow, it is recommended to configure [Webhook](/bank-connect/webhook)
 :::
 
 ## Inline Frame Workflow
@@ -76,9 +76,9 @@ Since there is no callback received on this flow, it is recommended to configure
 <img src="/img/inline_frame_workflow.png" alt="JavaScript Client SDK iframe Workflow" />
 
 The flow for this involves the following steps:
-- Create a session using [Session API](/bank-connect/javascript-client.html#session-api)
+- Create a session using [Session API](/bank-connect/javascript-client#session-api)
 - Get the URL received from above API and embed it in an `<iframe>`
-- You'll [receive callbacks](/bank-connect/javascript-client.html#receive-callbacks) by implementing an event listener. Based on the event you can close / hide the inline frame.
+- You'll [receive callbacks](/bank-connect/javascript-client#receive-callbacks) by implementing an event listener. Based on the event you can close / hide the inline frame.
 
 ## Receive callbacks
 1. To receive callbacks in `<iframe>` workflow, you need to implement an event listener. It can be implemented as follows:

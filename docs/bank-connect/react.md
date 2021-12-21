@@ -103,7 +103,7 @@ Once the dependency is added. You can use a BankConnect view anywhere in your co
 | `onSuccess`| specifies the callback when the document has been successfully uploaded. | No, but recommended |
 | `onError`| specifies the callback when an error occurred | No, but recommended |
 | `fromDate` and `toDate` | specifies the time period for which the statements will be fetched. If not provided the default date range is 6 months from the current date. Its format should be in `dd/MM/yyyy`. | No |
-| `bankName` | pass the [bank identifier](/bank-connect/appendix.html#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No |
+| `bankName` | pass the [bank identifier](/bank-connect/appendix#bank-identifiers) to skip the bank selection screen and directly open a that bank's screen instead | No |
 
 `fromDate` and `toDate` specify the period for which the statements will be fetched. For example, if you need the last 6 months of statements, `fromDate` will be today's date - 6 months and `toDate` will be today's date - 1 day. If not provided the default date range is 6 months from the current date. It should be in `dd/MM/yyyy` format.
 
@@ -179,7 +179,7 @@ const onError = (payload) => {
 
 
 :::warning Webhook
-To track additional errors, and transaction process completion at the server-side, it is recommended to also integrate [Webhook](/bank-connect/webhook.html).
+To track additional errors, and transaction process completion at the server-side, it is recommended to also integrate [Webhook](/bank-connect/webhook).
 :::
 
 ##### Error types

@@ -68,7 +68,7 @@ Call `createUser` method using the `FinBoxRiskSdk` instance to create the user (
 Please make sure `CUSTOMER_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 :::
 
-The response to this method (success or failure) can be captured using the callback, and on success [Start Periodic Sync Method](/device-connect/react-native.html#start-period-sync-method) should be called.
+The response to this method (success or failure) can be captured using the callback, and on success [Start Periodic Sync Method](/device-connect/react-native#start-periodic-sync-method) should be called.
 ```javascript
 import FinBoxRiskSdk from 'react-native-risk-sdk';
 //Function to trigger RiskSdk
@@ -89,7 +89,7 @@ const callModule = () => {
 }
 ```
 
-Read about the error codes in [this](/device-connect/react-native.html#error-codes) section.
+Read about the error codes in [this](/device-connect/react-native#error-codes) section.
 
 ## Start Periodic Sync Method
 

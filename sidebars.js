@@ -46,7 +46,7 @@ module.exports = {
       {
         type: 'link',
         label: 'Documentation Home Page',
-        href: '/docs',
+        href: '/dev/docs',
       },
       'embedded-finance/introduction',
       'embedded-finance/overview',
@@ -208,7 +208,7 @@ ProductOverview: { 'FinBox Overview' : [
   {
     type: 'link',
     label: 'Developer Documentation',
-    href: '/embedded-finance',
+    href: '/dev/docs',
   },
 
   
@@ -244,5 +244,29 @@ ProductOverview: { 'FinBox Overview' : [
   ],
 
 },
+
+DevDocOverview:{"Developer Documentation":[
+  'documentation_homepage',
+
+  {
+    type: 'link',
+    label: 'Embedded Finance Documentation',
+    href: '/embedded-finance',
+  },
+  {
+    type: 'link',
+    label: 'DeviceConnect Documentation',
+    href: '/device-connect',
+  },
+  {
+    type: 'link',
+    label: 'BankConnect Documentation',
+    href: '/bank-connect',
+  },
+ 
+
+]
+
+}
 
 };

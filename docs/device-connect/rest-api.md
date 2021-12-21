@@ -25,7 +25,7 @@ Authentication for the APIs are based on **SERVER_API_KEY** provided by the FinB
 
 Once FinBox DeviceConnect SDK is initialized, data from the device is sent to the FinBox processing engine against an anonymous `CUSTOMER_ID` which will be the primary key from retrieving any information from the server.
 
-Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predictors for a given customer. An overview of the API calling is shown in the [Workflow](/device-connect/rest-api.html#workflow) section. In case Insights API returns with status `"in_progress"` (meaning data is currently being processed), the client should poll the Insights API with a delay of at least **10 seconds**
+Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predictors for a given customer. An overview of the API calling is shown in the [Workflow](/device-connect/rest-api#workflow) section. In case Insights API returns with status `"in_progress"` (meaning data is currently being processed), the client should poll the Insights API with a delay of at least **10 seconds**
 
 ### Workflow
 
@@ -34,7 +34,7 @@ Clients need to call the **Insights API** with `CUSTOMER_ID` to get the predicto
 
 1. Call FinBox Insights API
 2. In case the response status is `"in_progress"`, retry after 10 seconds
-3. In case the response status is `"complete"`, receive data as per format mentioned in [Insights API Response](/device-connect/rest-api.html#insights-api-response) section.
+3. In case the response status is `"complete"`, receive data as per format mentioned in [Insights API Response](/device-connect/rest-api#insights-api-response) section.
 
 ## Insights API Endpoints
 
@@ -66,7 +66,7 @@ For all the Insights API request structure is the same, all requests must have `
 | --- | --- | --- |
 | customer_id | String | `CUSTOMER_ID` for which feature vector is required |
 | version | Integer | Version of the feature set shared by FinBox team as `DC_PREDICTORS_VERSION` |
-| salt | String | A salt which is computed basis logic mentioned in the [Salt Generation](/device-connect/rest-api.html#salt-generation) section |
+| salt | String | A salt which is computed basis logic mentioned in the [Salt Generation](/device-connect/rest-api#salt-generation) section |
 | metadata (`optional`) | Json | A dictionary which can be used to pass additional information for example loan_type, loan_amount or any tags |
 
 **Sample Metadata value**
@@ -122,7 +122,7 @@ The list of predictors in the `data` key will be different based on the result A
 :::
 
 :::warning NOTE
-Some of the keys in response may be missing based on the availability of data and HTTP Status code. Please refer to examples for each of the cases listed [here](/device-connect/rest-api.html#status-values).
+Some of the keys in response may be missing based on the availability of data and HTTP Status code. Please refer to examples for each of the cases listed [here](/device-connect/rest-api#status-values).
 :::
 
 ### `status` values
@@ -130,15 +130,15 @@ Depending on the availability of data, there can be different cases with differe
 
 | Case | `status` value | HTTP Status Code | Description / Action |
 | - | - | - | - |
-| [Calculation in progress](/device-connect/rest-api.html#case-1-calculation-in-progress) | `"in_progress"` | 202 | The request input is correct and processing has started. Please retry in 10 seconds |
-| [Calculation complete and data is available](/device-connect/rest-api.html#case-2-calculation-complete-and-data-is-available) | `"complete"` | 200 | The request input is correct and processing has completed. Response contains the predictors |
-| [Calculation complete and data is unavailable](/device-connect/rest-api.html#case-3-calculation-complete-and-data-is-unavailable) | `"no_data"` | 200 | The request input is correct and processing has completed but response contains no predictors because of lack of data from user's device |
-| [Data fetch for request Id before webhook callback or after 24 hours](/device-connect/rest-api.html#case-4-data-fetch-for-request-id-before-webhook-callback-or-after-24-hours) | `"webhook_not_found"` | 200 | The request has no data assosciated with it because the request id was never sent from webhook callback or it is deleted because 24 hours passed from when it was sent |
-| [Invalid customer ID](/device-connect/rest-api.html#case-4-invalid-customer-id) | `"not_found"` | 200 | User does not exist in FinBox system |
-| [Bad request](/device-connect/rest-api.html#case-5-bad-request) | `"error"` | 400 | The request input is incorrect / malformed. More details available in `message` key |
-| [Unauthorized](/device-connect/rest-api.html#case-6-unauthorized) | `"error"` | 403 | This happens in case SERVER_API_KEY is incorrect or IP address in not whitelisted |
-| [Internal Server Error](/device-connect/rest-api.html#case-6-unauthorized) | `"error"` | 5xx | The request processing failed because of some internal error. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. If the issue persists, please contact support |
-| [Rate Limit Exceeded](/device-connect/rest-api.html#case-8-rate-limit-exceeded) | `"error"` | 429 | This happens in case the maximum allowed rate limit on API exceeds. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. Contact FinBox to know your rate limits.|
+| [Calculation in progress](/device-connect/rest-api#case-1-calculation-in-progress) | `"in_progress"` | 202 | The request input is correct and processing has started. Please retry in 10 seconds |
+| [Calculation complete and data is available](/device-connect/rest-api#case-2-calculation-complete-and-data-is-available) | `"complete"` | 200 | The request input is correct and processing has completed. Response contains the predictors |
+| [Calculation complete and data is unavailable](/device-connect/rest-api#case-3-calculation-complete-and-data-is-unavailable) | `"no_data"` | 200 | The request input is correct and processing has completed but response contains no predictors because of lack of data from user's device |
+| [Data fetch for request Id before webhook callback or after 24 hours](/device-connect/rest-api#case-4-data-fetch-for-request-id-before-webhook-callback-or-after-24-hours) | `"webhook_not_found"` | 200 | The request has no data assosciated with it because the request id was never sent from webhook callback or it is deleted because 24 hours passed from when it was sent |
+| [Invalid customer ID](/device-connect/rest-api#case-4-invalid-customer-id) | `"not_found"` | 200 | User does not exist in FinBox system |
+| [Bad request](/device-connect/rest-api#case-5-bad-request) | `"error"` | 400 | The request input is incorrect / malformed. More details available in `message` key |
+| [Unauthorized](/device-connect/rest-api#case-6-unauthorized) | `"error"` | 403 | This happens in case SERVER_API_KEY is incorrect or IP address in not whitelisted |
+| [Internal Server Error](/device-connect/rest-api#case-6-unauthorized) | `"error"` | 5xx | The request processing failed because of some internal error. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. If the issue persists, please contact support |
+| [Rate Limit Exceeded](/device-connect/rest-api#case-8-rate-limit-exceeded) | `"error"` | 429 | This happens in case the maximum allowed rate limit on API exceeds. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. Contact FinBox to know your rate limits.|
 
 :::danger IMPORTANT
 In case your are running a daily CRON that fetches data using insights API, ensure you are not breaching the rate limit. Please contact FinBox to know your rate limits.
@@ -295,7 +295,7 @@ FinBox fires a webhook when a user's results are updated. Upon receipt of the we
 The webhook payload has the following keys:
 - **service**: It indicates the service whose results have been updated. Currently, It will be set to `PREDICTORS`.
 - **customer_id**: customer_id for which result was updated.
-- **salt**: A salt is used to authenticate webhook. It is computed basis logic mentioned in the [Salt Generation](/device-connect/rest-api.html#salt-generation) section.
+- **salt**: A salt is used to authenticate webhook. It is computed basis logic mentioned in the [Salt Generation](/device-connect/rest-api#salt-generation) section.
 - **request_id**: A unique string corresponding to each each request.
 
 

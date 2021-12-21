@@ -5,7 +5,7 @@ sidebar_label: Python
 
 You can use the python package to fetch enriched data for an entity.
 
-**Part 1** of this article with details on installing the package, authentication, advanced settings, identity and uploading statements are listed [on this page](/bank-connect/upload-python.html).
+**Part 1** of this article with details on installing the package, authentication, advanced settings, identity and uploading statements are listed [on this page](/bank-connect/upload-python).
 
 ## Accounts
 To fetch accounts use the `get_accounts` method. It returns an **iterator** to the account dictionary list, after fetching.
@@ -114,7 +114,7 @@ Each of the fraud dictionaries includes the keys `statement_id` and `fraud_type`
 
 Optionally a key `transaction_hash` may be present in some cases in this dictionary for transaction-level frauds indicating the transaction in which the fraud was found.
 
-To know more about `fraud_type`, refer to [Fraud](/bank-connect/fraud.html) section in Basics.
+To know more about `fraud_type`, refer to [Fraud](/bank-connect/fraud) section in Basics.
 
 ## Transactions
 To fetch transactions use the `get_transactions` method. It returns an **iterator** to the transaction dictionary list, after fetching.
@@ -189,14 +189,14 @@ Sample transaction dictionary:
 Each of the transaction dictionary in the transaction list has the following keys:
 - `transaction_note`: exact transaction note / description present in the statement PDF
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `amount`: indicates the transaction amount
 - `date`: date of transaction
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
 - `balance`: account balance just after this transaction
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 
 
 ## Salary
@@ -257,15 +257,15 @@ Sample salary dictionary:
 Each of the salary dictionary in the transaction list has the following keys:
 - `balance`: account balance just after this transaction
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `clean_transaction_note`: Transaction note in clean English words
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `date`: date of transaction
 - `amount`: indicates the transaction amount
 - `month_year`: month and year for which the salary is
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 - `transaction_note`: exact transaction note / description present in the statement PDF
 
 
@@ -352,9 +352,9 @@ Each of the recurring transaction dictionary (both credit and debit) has the fol
 - `account_id`: unique UUID4 identifier for the account to which transaction set belongs to
 - `start_date`: the start date for the recurring transaction set
 - `end_date`: end date for the recurring transaction set
-- `transaction_channel`: transaction channel in upper case. Refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: transaction channel in upper case. Refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 - `median`: median of the transaction amounts under the given recurring transaction set
-- `transactions`: list of transaction dictionary under the recurring transaction set. Each transaction dictionary here has the same keys as a transaction dictionary in `get_transactions` (Refer [here](/bank-connect/python.html#transaction-dictionary) to know about the keys).
+- `transactions`: list of transaction dictionary under the recurring transaction set. Each transaction dictionary here has the same keys as a transaction dictionary in `get_transactions` (Refer [here](/bank-connect/python#transaction-dictionary) to know about the keys).
 
 
 
@@ -415,11 +415,11 @@ Sample lender transaction dictionary:
 Each of the lender transaction dictionary in the transaction list has the following keys:
 - `transaction_note`: exact transaction note / description present in the statement PDF
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `amount`: indicates the transaction amount
 - `date`: date of transaction
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
 - `balance`: account balance just after this transaction
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
