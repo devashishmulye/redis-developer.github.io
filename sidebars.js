@@ -56,7 +56,7 @@ module.exports = {
         // collapsible: false,
         // collapsed: false,
         // sidebarCollapsible: false,
-        label: 'Mobile Integration',
+        label: 'Integrations',
         items: [
           'embedded-finance/android-sdk',
           'embedded-finance/react-native',

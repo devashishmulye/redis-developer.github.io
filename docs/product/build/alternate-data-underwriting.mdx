@@ -8,71 +8,47 @@ hide_table_of_contents: false
 import RedisCard from "@site/src/theme/RedisCard";
 
 
-## What is FinBox?
+At its core, lending is how well you manage and assess risk. Good risk assessment not only helps you collect debt, it helps you approve more customers, improves your margin, and enables you to improve the terms of credit for your end user.
 
-FinBox is a credit infrastructure and risk intelligence company. We build various products in the digital lending value chain. 
-We enable
+When lenders underwrite a customer, they assess him along two parameters - 
 
- - Any company to launch a digital credit program on their platform by leveraging our end-to-end credit infrastructure.
- - Lenders to improve their approval rates and collection percentage by providing risk intelligence 
+* **Capability to Pay** - We analyse users bank statement and look for his income, and other credit history. Based on thse we detemine users' capability to pay.
+* **Intent to Pay** - We look for users engagement on Anchor app and previous repayment history. Based on this we detemine users intent to pay.
+
+<CenteredImage  imgSrc={"/img/risk-assessment.png" } text=" " imgWidth="205%"/>
+
+There are two ways of assessing credit-worthiness
+
+* Traditional Underwriting based on the Credit History
+* Alternate Data Underwriting
 
 
-## Why FinBox?
-
-<img src="/img/build_overview.png" alt="Build overview" />
 
 
-## Embedded Finance
+## FinBox Alternate Data Underwriting suite:
 
-<div class="row">
+Our products [DeviceConnect](/product/products/device-connect) and [BankConnect](/product/products/bank-connect) provides us the alternate data to underwrite.
 
-<div class="col">
-  <RedisCard
-    title="FinBox Embedded Finance Platform"
-    img="/img/EmbeddedFinance.svg"
-    description="Build your own credit program by leveraging the FinBox Embedded Finance Platform"
-    page="/embedded-finance/"
-  />
-</div>
 
-<div class="col">
-  <br></br>
-</div>
+* [DeviceConnect](/product/products/device-connect)
+* [BankConnect](/product/products/bank-connect)
 
-</div>
+## What is a credit policy?
 
-## Risk Intelligence
+A set of rules decided by a financial institution that measures the creditworthiness of a borrower and determines whether to approve the loan.
 
-<div class="row">
 
-<div class="col">
-  <RedisCard
-    title="DeviceConnect"
-    img="/img/DeviceConnect.svg"
-    description="Leverage device data to build advanced underwriting models"
-    page="/device-connect/"
-  />
-</div>
 
- <div class="col">
-    <RedisCard 
-        title="BankConnect" 
-        img="/img/BankConnect.svg"
-        description="Integrate Account Aggregator and Bank Statement Analysis in your platform" 
-        page="/bank-connect/"
-        />
- </div>
-  </div>
+## How we Credit Score NTC Customers
+NTC Customers do not have a credit history, therefore financial institutions are unable to underwrite them.
+They however own rich alternate data in the form of their digital footprint. 
 
-<div class="row">
+We get this alternate data using [DeviceConnect](/product/products/device-connect) (device data), [BankConnect](/product/products/bank-connect) (Bank Statements), GST Data and also transaction data from our partners.
 
- <div class="col">
-    <RedisCard 
-        title="CollectX" 
-        img = "/img/collectx.svg"
-        description="Leverage device data and real-time monitoring to build collection prioritisation system" 
-        page="/create/azure"
-        />
- </div>
-  <div class="col"><br></br></div>
-</div>
+## Risk based pricing
+
+A credit limit is set for users based on their credit history, bureau score, and credit score. We do not live large ticket loans to users with low credit score.
+
+## Fraud Management
+
+DeviceConnect helps lenders identify fraudulent applications earlier in the loan cycle, thereby optimizing the loan funnel and equalizing interest rates, i.e., lower interest rates for good borrowers and higher for high-risk ones.
