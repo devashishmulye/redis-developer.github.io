@@ -4,11 +4,11 @@ sidebar_label: REST APIs
 ---
 
 
-BankConnect REST APIs can be used to fetch enriched data for an entity. This guide first lists some basic fields like [Progress](/bank-connect/rest-api.html#progress-field) and [Fraud](/bank-connect/rest-api.html#fraud-field), and then explores different enriched data APIs.
+BankConnect REST APIs can be used to fetch enriched data for an entity. This guide first lists some basic fields like [Progress](/bank-connect/rest-api#progress-field) and [Fraud](/bank-connect/rest-api#fraud-field), and then explores different enriched data APIs.
 
 You can also try these APIs on Postman. Check out [this](/bank-connect/#postman-collection) article for more details.
 
-To know how to upload statements using REST API, check out [this](/bank-connect/#upload-rest-api.html) article.
+To know how to upload statements using REST API, check out [this](/bank-connect/#upload-rest-api) article.
 
 :::warning Request Format
 BankConnect accepts all requests with form fields, so please make sure that all requests must be made with content-type `application/x-www-form-urlencoded` or `multipart/form-data; boundary={boundary string}`
@@ -62,7 +62,7 @@ A general rule of thumb would be to make sure all objects in the `progress` fiel
 It is to be noted that `status` for all different analysis APIs are separate, that is identity and progress might have different statuses for the document, depending on whichever is taking less or more time. So make sure to check the status for each of the analysis API before trying to use the extracted values.
 :::
 
-## Fraud Field <Badge text="beta" type="warn" />
+## Fraud Field
 In all of the analysis field APIs (transaction, accounts, etc.), there is a field `fraud` present, that holds an object with two fields:
 - `fraudulent_statements`: array of `statement_id`s which have some sort detected after analysis or in first basic check)
 - `fraud_type`: array of fraud objects having following keys:
@@ -76,7 +76,7 @@ In all of the analysis field APIs (transaction, accounts, etc.), there is a fiel
     | `fraud_category` | String | Indicates the fraud category |
 
 :::tip NOTE
-To know more about fraud categories and fraud type, refer to [Fraud](/bank-connect/fraud.html) section.
+To know more about fraud categories and fraud type, refer to [Fraud](/bank-connect/fraud) section.
 :::
 
 Sample `fraud` field value:
@@ -163,15 +163,15 @@ The response has the following fields:
     | months | array of strings | month and year for which data is available|
     | statements | array of strings | list of statement unique identifiers under the account |
     | account_id | string | unique identifier for account |
-    | bank | string | [bank identifier](/bank-connect/appendix.html#bank-identifiers) to which the account belongs  |
+    | bank | string | [bank identifier](/bank-connect/appendix#bank-identifiers) to which the account belongs  |
     | ifsc | string | IFSC code of bank account |
     | micr | string | MICR code of bank account |
     | account_category | string | account category, can be `individual` or `corporate` |
     | account_number | string | account number |
     | credit_limit   | Integer |  limit up to which a company can withdraw from the working capital limit sanctioned |
 
-- `progress` (read more in [Progress Field](/bank-connect/rest-api.html#progress-field) section)
-- `fraud` (read more in [Fraud Field](/bank-connect/rest-api.html#fraud-field) section)
+- `progress` (read more in [Progress Field](/bank-connect/rest-api#progress-field) section)
+- `fraud` (read more in [Fraud Field](/bank-connect/rest-api#fraud-field) section)
 
 ## Identity
 Lists extracted identities for a given entity.
@@ -241,7 +241,7 @@ On fetching information successfully, the response would be of the following for
     ]
 }
 ```
-The response fields are the same as in [List Accounts](/bank-connect/rest-api.html#list-accounts), but there is an additional `identity` field that holds an array of identity objects. Each object has:
+The response fields are the same as in [List Accounts](/bank-connect/rest-api#list-accounts), but there is an additional `identity` field that holds an array of identity objects. Each object has:
 
 | Field | Type | Description |
 | - | - | - |
@@ -330,17 +330,17 @@ On fetching information successfully, the response would be of the following for
     ]
 }
 ```
-The response fields are the same as in [List Accounts](/bank-connect/rest-api.html#list-accounts), but there is an additional `transactions` field that holds an array of transaction objects. Each object has the following fields:
+The response fields are the same as in [List Accounts](/bank-connect/rest-api#list-accounts), but there is an additional `transactions` field that holds an array of transaction objects. Each object has the following fields:
 - `transaction_note`: exact transaction note / description present in the statement PDF
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `amount`: indicates the transaction amount
 - `date`: date of transaction
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
 - `balance`: account balance just after this transaction
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 
 ## Salary
 Get extracted salary transactions for a given entity.
@@ -436,18 +436,18 @@ On fetching information successfully, the response would be of the following for
     ]
 }
 ```
-The response fields are the same as in [List Accounts](/bank-connect/rest-api.html#list-accounts), but there is an additional `transactions` field that holds an array of salary transaction objects. Each object has the following fields:
+The response fields are the same as in [List Accounts](/bank-connect/rest-api#list-accounts), but there is an additional `transactions` field that holds an array of salary transaction objects. Each object has the following fields:
 - `balance`: account balance just after this transaction
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `clean_transaction_note`: Transaction note in clean English words
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `date`: date of transaction
 - `amount`: indicates the transaction amount
 - `month_year`: month and year for which the salary is
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 - `transaction_note`: exact transaction note / description present in the statement PDF
 
 ## Recurring Transactions
@@ -600,15 +600,15 @@ On fetching information successfully, the response would be of the following for
     }
 }
 ```
-The response fields are the same as in [List Accounts](/bank-connect/rest-api.html#list-accounts), but there are two additional fields `credit_transactions` and `debit_transactions` that holds an array of **recurring transaction set** objects for credit and debit transaction type respectively.
+The response fields are the same as in [List Accounts](/bank-connect/rest-api#list-accounts), but there are two additional fields `credit_transactions` and `debit_transactions` that holds an array of **recurring transaction set** objects for credit and debit transaction type respectively.
 Each of the recurring transaction set object has the following fields:
 - `account_id`: unique UUID4 identifier for the account to which transaction set belongs to
 - `start_date`: the start date for the recurring transaction set
 - `end_date`: end date for the recurring transaction set
-- `transaction_channel`: transaction channel in upper case. Refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: transaction channel in upper case. Refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 - `median`: median of the transaction amounts under the given recurring transaction set
 - `clean_transaction_note`: contains a clean and small transaction note, it can be used as an identifier for source/destination for the recurring transaction set
-- `transactions`: list of transaction objects under the recurring transaction set. Each transaction object here has the same fields as the transaction object in transactions API (Refer the response section [here](/bank-connect/rest-api.html/#transactions) to know about the fields).
+- `transactions`: list of transaction objects under the recurring transaction set. Each transaction object here has the same fields as the transaction object in transactions API (Refer the response section [here](/bank-connect/rest-api/#transactions) to know about the fields).
 
 ## Lender Transactions
 Get extracted lender transactions for a given entity.
@@ -700,17 +700,17 @@ On fetching information successfully, the response would be of the following for
     ]
 }
 ```
-The response fields are the same as in [List Accounts](/bank-connect/rest-api.html#list-accounts), but there is an additional `transactions` field that holds an array of lender transaction objects. Each object has the following fields:
+The response fields are the same as in [List Accounts](/bank-connect/rest-api#list-accounts), but there is an additional `transactions` field that holds an array of lender transaction objects. Each object has the following fields:
 - `transaction_note`: exact transaction note / description present in the statement PDF
 - `hash`: a unique identifying hash for each transaction
-- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix.html#description) list for possible values.
+- `description`: describes more information about the `transaction_channel` field. Refer to [this](/bank-connect/appendix#description) list for possible values.
 - `account_id`: unique UUID4 identifier for the account to which the transaction belongs to
 - `transaction_type`: can be `debit` or `credit`
 - `amount`: indicates the transaction amount
 - `date`: date of transaction
-- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix.html#merchant-category) list of possible values.
+- `merchant_category`: the category of the merchant in case a transaction is with a merchant. Refer to [this](/bank-connect/appendix#merchant-category) list of possible values.
 - `balance`: account balance just after this transaction
-- `transaction_channel`: refer to [this](/bank-connect/appendix.html#transaction-channel) list for possible values.
+- `transaction_channel`: refer to [this](/bank-connect/appendix#transaction-channel) list for possible values.
 
 ## Expense Categories <Badge text="New" />
 Get expense category wise percentage distribution of transaction amounts for a given entity.
@@ -774,7 +774,7 @@ Here, the `progress` field holds an array of statement wise progress status, whi
 
 | Field | Type | Description |
 | - | - | - |
-| category | String | contains the expense category, it is a mix of [merchant category](/bank-connect/appendix.html#merchant-category) and [transaction channel](/bank-connect/appendix.html#transaction-channel) |
+| category | String | contains the expense category, it is a mix of [merchant category](/bank-connect/appendix#merchant-category) and [transaction channel](/bank-connect/appendix#transaction-channel) |
 | percentage | Integer | percentage for the expense category rounded to nearest integer with some of all percentage equal to 100 |
 
 ## Top Debit Credit <Badge text="New" />

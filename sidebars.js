@@ -46,7 +46,7 @@ module.exports = {
       {
         type: 'link',
         label: 'Documentation Home Page',
-        href: '/docs',
+        href: 'https://docs.finbox.in/',
       },
       'embedded-finance/introduction',
       'embedded-finance/overview',

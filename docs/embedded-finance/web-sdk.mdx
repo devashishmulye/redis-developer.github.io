@@ -8,8 +8,8 @@ FinBox Lending SDK is a drop-in module that can add a digital lending journey to
 ## Workflow
 
 The flow for web SDK involves following steps:
-- Create a user using [Create User](/middleware/sourcing-rest-api.html#create-user) API (One Time)
-- Get Eligibility of the user using [Get Eligibility](/middleware/sourcing-rest-api.html#get-eligibility) API (One time)
+- Create a user using [Create User](rest-api#create-user) API (One Time)
+- Get Eligibility of the user using [Get Eligibility](rest-api#get-eligibility) API (One time)
 
 Now everytime user initiates/resumes their lending journey by clicking on a banner/button on your app/website:
 - Call the [Session API](#session-api) to get the URL, which can be rendered in a web view, or can be redirected to
@@ -17,7 +17,7 @@ Now everytime user initiates/resumes their lending journey by clicking on a bann
 
 :::warning NOTE
 - All the above APIs are called at server side.
-- [Webhook](/middleware/sourcing-rest-api.html#webhook) can be configured to get updates about the loan applications.
+- [Webhook](rest-api#webhook) can be configured to get updates about the loan applications.
 :::
 
 ## Session API

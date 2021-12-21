@@ -239,7 +239,7 @@ FinBox.createUser("CLIENT_API_KEY", "CUSTOMER_ID",
 </TabItem>
 </Tabs>
 
-You can read about the errors in the [Error Codes](/device-connect/error-codes.html) section.
+You can read about the errors in the [Error Codes](/device-connect/error-codes) section.
 
 ## Start Periodic Sync
 

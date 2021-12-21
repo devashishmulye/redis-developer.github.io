@@ -43,7 +43,7 @@ Integration flow on the mobile and the back-end should be as shown below
         title="React Native" 
         img="/img/React.png"
         description="Integrate it on your web or mobile app" 
-        page="device-connect/react-native"
+        page="/device-connect/react-native"
         />
 </div>
 
@@ -65,7 +65,7 @@ Integration flow on the mobile and the back-end should be as shown below
         title="Cordova" 
         img="/img/cordova.svg"
         description="Integrate it on your web or mobile app" 
-        page="device-connect/cordova"
+        page="/device-connect/cordova"
         />
 </div>
 

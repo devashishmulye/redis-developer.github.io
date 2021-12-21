@@ -41,7 +41,7 @@ In case both `link_id` and `entity_id` are present in request, `link_id` will be
 If the bank statements are password protected it is required to pass the password in the `pdf_password` parameter in upload APIs. The next section lists the upload APIs.
 
 ## Uploading statements in files
-This section lists the endpoint and request format for upload APIs that accepts file in request. Response Format is [present here](/bank-connect/upload-rest-api.html#response-format).
+This section lists the endpoint and request format for upload APIs that accepts file in request. Response Format is [present here](/bank-connect/upload-rest-api#response-format).
 
 ### Bank name is known
 
@@ -56,7 +56,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 | Name | Type | Description | Required  | Default |
 | - | - | - | - | - |
 | file | file  | the statement pdf file | Yes | - |
-| bank_name | string | a valid [bank identifier](/bank-connect/appendix.html#bank-identifiers) | Yes | - |
+| bank_name | string | a valid [bank identifier](/bank-connect/appendix#bank-identifiers) | Yes | - |
 | link_id | string | a `link_id` against which you want to upload the statement | Yes | - |
 | entity_id | string | an `entity_id` against which you want to upload the statement | No | - |
 | pdf_password | string | password for the pdf in case it is password protected | No | - |
@@ -81,7 +81,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 | pdf_password | string | password for the pdf in case it is password protected | No | - |
 
 ## Uploading base 64 encoded statements
-This section lists the endpoint and request format for upload APIs that accepts base 64 encoded files. Response Format is [present here](/bank-connect/upload-rest-api.html#response-format).
+This section lists the endpoint and request format for upload APIs that accepts base 64 encoded files. Response Format is [present here](/bank-connect/upload-rest-api#response-format).
 
 ### Bank name known
 
@@ -96,7 +96,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 | Name | Type | Description | Required  | Default |
 | - | - | - | - | - |
 | file | string  | the statement pdf file in base 64 encoded string | Yes | - |
-| bank_name | string | a valid [bank identifier](/bank-connect/appendix.html#bank-identifiers) | Yes | - |
+| bank_name | string | a valid [bank identifier](/bank-connect/appendix#bank-identifiers) | Yes | - |
 | link_id | string | a `link_id` against which you want to upload the statement | Yes | - |
 | entity_id | string | an `entity_id` against which you want to upload the statement | No | - |
 | pdf_password | string | password for the pdf in case it is password protected | No | - |
@@ -121,7 +121,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 | pdf_password | string | password for the pdf in case it is password protected | No | - |
 
 ## Uploading statement file URL
-This section lists the endpoint and request format for upload APIs that accepts file URLs. Response Format is [present here](/bank-connect/upload-rest-api.html#response-format).
+This section lists the endpoint and request format for upload APIs that accepts file URLs. Response Format is [present here](/bank-connect/upload-rest-api#response-format).
 
 ### Bank name known
 
@@ -136,7 +136,7 @@ Request header `x-api-key` with API Key as value must be present in request.
 | Name | Type | Description | Required  | Default |
 | - | - | - | - | - |
 | file_url | string  | publicly accessible full file URL with protocol (HTTPS) | Yes | - |
-| bank_name | string | a valid [bank identifier](/bank-connect/appendix.html#bank-identifiers) | Yes | - |
+| bank_name | string | a valid [bank identifier](/bank-connect/appendix#bank-identifiers) | Yes | - |
 | link_id | string | a `link_id` against which you want to upload the statement | Yes | - |
 | entity_id | string | an `entity_id` against which you want to upload the statement | No | - |
 | pdf_password | string | password for the pdf in case it is password protected | No | - |
@@ -191,7 +191,7 @@ The identity information returned in the response can be used to verify the cust
 
 | Key | Type | Description |
 | - | - | - | - | - |
-| bank_name | string  | indicates the bank, refer [here](/bank-connect/appendix.html#bank-identifiers) for complete list |
+| bank_name | string  | indicates the bank, refer [here](/bank-connect/appendix#bank-identifiers) for complete list |
 | statement_id | string | Unique identifier for Statement |
 | entity_id | string | unique identifier for entity |
 | date_range | object | contains `from_date` and `to_date` strings indicating the time period in `YYYY-MM-DD` format |
@@ -204,10 +204,10 @@ The identity information returned in the response can be used to verify the cust
 | credit_limit   | Integer |  limit up to which a company can withdraw from the working capital limit sanctioned |
 | address | string | address of the bank account holder |
 | name | string | name of the bank account holder |
-| status | integer | contains the status code for API, should be 1 for success. Other possible values are listed in Bad Requests(/bank-connect/upload-rest-api.html#bad-request-cases) section |
+| status | integer | contains the status code for API, should be 1 for success. Other possible values are listed in Bad Requests(/bank-connect/upload-rest-api#bad-request-cases) section |
 
 :::warning NOTE
-- `fraud_type` field is `null` in case `is_fraud` field is false, otherwise it is a string. Please refer to [Fraud](/bank-connect/fraud.html) section to know more about it.
+- `fraud_type` field is `null` in case `is_fraud` field is false, otherwise it is a string. Please refer to [Fraud](/bank-connect/fraud) section to know more about it.
 - Some of the fields within the identity dictionary, or the `from_date` and `to_date` maybe `null` for few statements depending on the bank statement format and what all information is present on the top of the statement. The `from_date` and the `to_date` in case are returned as `null`, are updated for the statement at a later stage when transactions are extracted.
 - The query parameter `?identity=true` is optional for both the APIs above, if not specified the response will only include `entity_id`, `statement_id` and `bank_name` fields in case of successful upload.
 :::

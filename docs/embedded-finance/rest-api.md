@@ -5,9 +5,9 @@ sidebar_label: REST APIs
 
 
 These APIs are called from the **server side**. The workflow is as follows:
-- First a user is created by calling [Create User](/middleware/sourcing-rest-api.html#create-user) API
-- Eligibility for the given user is checked by calling [Get Eligibility](/middleware/sourcing-rest-api.html#get-eligibility) API
-- Token is generated for the user by calling [Generate Token](/middleware/sourcing-rest-api.html#generate-token) API and is sent to the Android app to be used with the [SDK](/middleware/android-sdk.html)
+- First a user is created by calling [Create User](rest-api#create-user) API
+- Eligibility for the given user is checked by calling [Get Eligibility](rest-api#get-eligibility) API
+- Token is generated for the user by calling [Generate Token](rest-api#generate-token) API and is sent to the Android app to be used with the [SDK](android-sdk)
 
 ## Authentication
 All the APIs below require a **Server API Key** to be passed in `x-api-key` header. This API Key will be shared directly by FinBox. Make sure this key is not exposed in any of your client side applications.
@@ -158,7 +158,7 @@ Query parameters can be appended at end of the URL like `/?limit=20&page=1`
 | to | Yes | Date | Filter by a given end date (IST). Defaults to current date. Format `yyyy-mm-dd`. Needs to be used with query param `from` | 
 | customerID | Yes | String | Filter all users of a given `%customerID%` pattern. | 
 | mobile | Yes | String | Filter all users of a given `%mobileNumber%` pattern.  | 
-| statusText | Yes | String | Filter all loan applications of a given loan status. Status list in [Appendix](/middleware/appendix.md) | 
+| statusText | Yes | String | Filter all loan applications of a given loan status. Status list in [Appendix](appendix) | 
 
 ### Response
 ```json
@@ -184,7 +184,7 @@ Query parameters can be appended at end of the URL like `/?limit=20&page=1`
     }
 }
 ```
-Different values of user status can be found in [Appendix](/middleware/appendix.html)
+Different values of user status can be found in [Appendix](appendix)
 
 ## User Profile
 Returns the profile of the user against a `customerID`
@@ -214,7 +214,7 @@ GET **`base_url`/v1/user/profile?customerID=`someCustomerID`**
     "status": true
 }
 ```
-- Different values of `status` (customer status) can be found in [Appendix](/middleware/appendix.html)
+- Different values of `status` (customer status) can be found in [Appendix](appendix)
 - `createdAt` indicates the date time of user creation in `YYYY-MM-DD HH:MM:SS` format (UTC)
 
 ## List Loans
@@ -235,7 +235,7 @@ Query parameters can be appended at end of the URL like `/?limit=20&page=1`
 | to | Yes | Date | Filter by a given end date (IST). Defaults to current date. Format `yyyy-mm-dd` | 
 | customerID | Yes | String | Filter all loan applications of a given `%customerID%` pattern.  | 
 | mobile | Yes | String | Filter all loan applications of a given `%mobileNumber%` pattern.  | 
-| statusText | Yes | String | Filter all loan applications of a given loan status. Status list in [Appendix](/middleware/appendix.html#list-of-loan-status) | 
+| statusText | Yes | String | Filter all loan applications of a given loan status. Status list in [Appendix](appendix#list-of-loan-status) | 
 
 ### Response
 ```json
@@ -260,7 +260,7 @@ Query parameters can be appended at end of the URL like `/?limit=20&page=1`
     }
 }
 ```
-Different values of loan status can be found in [Appendix](/middleware/appendix.html#list-of-loan-status)
+Different values of loan status can be found in [Appendix](appendix#list-of-loan-status)
 
 `createdAt` indicates the date time of loan creation in `YYYY-MM-DD HH:MM:SS` format (UTC)
 
@@ -746,7 +746,7 @@ POST **`base_url`/v1/creditline/txn/confirm**
 ```
 | Field | Type | Description |
 | - | - | - |
-| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](/middleware/sourcing-rest-api.html#credit-line-transactions) |
+| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](rest-api#credit-line-transactions) |
 | awbNo | String | Air Waybill Number |
 | invoiceNo | String | Invoice Number |
 | podExtension | String | File extension for proof of delivery, can be `jpg`, `png` or `pdf` |
@@ -782,7 +782,7 @@ POST **`base_url`/v1/creditline/txn/cancel**
 ```
 | Field | Type | Description |
 | - | - | - |
-| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](/middleware/sourcing-rest-api.html#credit-line-transactions) |
+| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](rest-api#credit-line-transactions) |
 
 On successful updating the status, API will give a response with 200 HTTP status code.
 
@@ -818,7 +818,7 @@ POST **`base_url`/v1/creditline/txn/split**
 ```
 | Field | Type | Description |
 | - | - | - |
-| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](/middleware/sourcing-rest-api.html#credit-line-transactions)  |
+| txnID | String | Unique FinBox Transaction ID, this can be fetched using the [Credit Line Transactions API](rest-api#credit-line-transactions)  |
 | invoiceNo | String | Invoice Number. This is optional and can be skipped by passing blank string |
 | amount | Float | Amount of the sub transaction |
 
@@ -828,7 +828,7 @@ On successful updating the status, API will give a response with 200 HTTP status
 1. Please make sure sum of amounts add up to the original transaction amount being split
 2. API will throw an error if total amount exceeds the original transaction amount being split
 3. In case sum of amounts is less than original transaction amount, another transaction with no invoiceNo and left over amount will be created, and split will proceed
-4. After split is complete sub transactions will have same `partnerTxnID` but different `txnID` (FinBox Transaction ID). In such cases, `invoiceNo` and `amount` fields in [Credit Line Transactions API](/middleware/sourcing-rest-api.html#credit-line-transactions) can be used to distinguish between the sub transactions.
+4. After split is complete sub transactions will have same `partnerTxnID` but different `txnID` (FinBox Transaction ID). In such cases, `invoiceNo` and `amount` fields in [Credit Line Transactions API](rest-api#credit-line-transactions) can be used to distinguish between the sub transactions.
 :::
 
 ### Error Cases
@@ -879,12 +879,12 @@ GET **`base_url`/v1/user/activity?customerID=`someCustomerID`**
 
 - `entityType` indicates who took the action event
 - `eventType` indicates the active event or activity
-- `source` indicates the **last source** passed in [Generate Token API](/middleware/sourcing-rest-api.html#generate-token) or [Session API](/middleware/web-sdk.html#session-api)
+- `source` indicates the **last source** passed in [Generate Token API](rest-api#generate-token) or [Session API](web-sdk#session-api)
 - `journeyType` can be `business_loan`, `personal_loan` or `credit_line`
 
-A list of all possible activities (`eventType`) can be found [Appendix](/middleware/appendix.html#list-of-custom-activities)
+A list of all possible activities (`eventType`) can be found [Appendix](appendix#list-of-custom-activities)
 
-A list of all possible entity types (`entityType`) can be found [Appendix](/middleware/appendix.html#list-of-entity-types)
+A list of all possible entity types (`entityType`) can be found [Appendix](appendix#list-of-entity-types)
 
 ## Webhook
 A webhook can be configured to receive events on different actions taken throughout the user journey.
@@ -918,11 +918,11 @@ We'll be sending JSON encoded body in the following payload format:
 
 :::warning IMPORTANT
 - `loanApplicationID` is available once the loan application is created, and will not be available for credit line specific activities.
-- `eventDescription` is always a **string**, in some cases you might get string encoded JSON as well. These specific cases are mentioned in [Appendix](/middleware/appendix.html#list-of-user-activities) along with activities.
-- `source` indicates the **last source** passed in [Generate Token API](/middleware/sourcing-rest-api.html#generate-token) or [Session API](/middleware/web-sdk.html#session-api)
+- `eventDescription` is always a **string**, in some cases you might get string encoded JSON as well. These specific cases are mentioned in [Appendix](appendix#list-of-user-activities) along with activities.
+- `source` indicates the **last source** passed in [Generate Token API](rest-api#generate-token) or [Session API](web-sdk#session-api)
 - `journeyType` can be `business_loan`, `personal_loan` or `credit_line`
 :::
 
-A list of all possible activities (`eventType`) can be found [Appendix](/middleware/appendix.html#list-of-custom-activities)
+A list of all possible activities (`eventType`) can be found [Appendix](appendix#list-of-custom-activities)
 
-A list of all possible entity types (`entityType`) can be found [Appendix](/middleware/appendix.html#list-of-entity-types)
+A list of all possible entity types (`entityType`) can be found [Appendix](appendix#list-of-entity-types)

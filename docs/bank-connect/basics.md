@@ -23,4 +23,4 @@ It is often required to refer to an entity by a unique identifier provided by yo
 
 <img src="/img/link_id_2.png" alt="Link ID" />
 
-Now since these terms are clear, you can head towards the next section [Uploading Bank Statements](/bank-connect/upload-overview.html) which is the first step of the integration process.
+Now since these terms are clear, you can head towards the next section [Uploading Bank Statements](/bank-connect/upload-overview) which is the first step of the integration process.
