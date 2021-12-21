@@ -45,7 +45,7 @@ Call `createUser` method using the `FinBoxRiskManager` instance to create the us
 Please make sure `CUSTOMER_ID` is **not more than 64** characters and is **alphanumeric** (with no special characters). Also it should never `null` or a blank string `""`.
 :::
 
-The response to this method (success or failure) can be captured using the callback, and on success [Start Periodic Sync Method](/device-connect/cordova#start-period-sync-method) should be called.
+The response to this method (success or failure) can be captured using the callback, and on success [Start Periodic Sync Method](/device-connect/cordova#start-periodic-sync-method) should be called.
 ```javascript
 cordova.plugins.FinBoxRiskManager.createUser("CLIENT_API_KEY", "CUSTOMER_ID", function (response) {
     console.log(response);

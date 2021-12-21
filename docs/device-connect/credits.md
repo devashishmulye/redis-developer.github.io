@@ -1,6 +1,6 @@
 # DeviceConnect: Credits
 
-This page is an **extension** to the documentation [here](/device-connect/rest-api.html) and lists additional **Insights API Endpoints** for fetching captured **Credit Transactions**  of customers.
+This page is an **extension** to the documentation [here](/device-connect/rest-api) and lists additional **Insights API Endpoints** for fetching captured **Credit Transactions**  of customers.
 ​
 :::danger IMPORTANT
 - Please refer to [Insights API Request](/device-connect/rest-api#insights-api-request) and [Insights API Response](/device-connect/rest-api#insights-api-response) to understand the **request** and **response** structure (including the data key) respectively.

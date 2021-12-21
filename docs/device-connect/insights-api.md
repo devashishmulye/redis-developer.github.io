@@ -50,7 +50,7 @@ For all the Insights API request structure is the same, all requests must have `
 | --- | --- | --- |
 | customer_id | String | `CUSTOMER_ID` for which feature vector is required |
 | version | Integer | Version of the feature set shared by FinBox team as `DC_PREDICTORS_VERSION` |
-| salt | String | A salt which is computed basis logic mentioned in the [Salt Generation](/salt-generation.html) section |
+| salt | String | A salt which is computed basis logic mentioned in the [Salt Generation](salt-generation) section |
 | metadata (`optional`) | Json | A dictionary which can be used to pass additional information for example loan_type, loan_amount or any tags |
 
 **Sample Metadata value**
@@ -115,14 +115,14 @@ Depending on the availability of data, there can be different cases with differe
 | Case | `status` value | HTTP Status Code | Description / Action |
 | - | - | - | - |
 | [Calculation in progress](/device-connect/insights-api#case-1-calculation-in-progress) | `"in_progress"` | 202 | The request input is correct and a webhook callback is registered |
-| [Calculation complete and data is available](/device-connect/insights-api.html#case-2-calculation-complete-and-data-is-available) | `"complete"` | 200 | The request input is correct and processing has completed. Response contains the predictors |
-| [Calculation complete and data is unavailable](/device-connect/insights-api.html#case-3-calculation-complete-and-data-is-unavailable) | `"no_data"` | 200 | The request input is correct and processing has completed but response contains no predictors because of lack of data from user's device |
-| [Data fetch for request Id before webhook callback or after 24 hours](/device-connect/insights-api.html#case-4-data-fetch-for-request-id-before-webhook-callback-or-after-24-hours) | `"webhook_not_found"` | 200 | The request has no data assosciated with it because the request id was never sent from webhook callback or it is deleted because 24 hours passed from when it was sent |
-| [Invalid customer ID](/device-connect/insights-api.html#case-4-invalid-customer-id) | `"not_found"` | 200 | User does not exist in FinBox system |
-| [Bad request](/device-connect/insights-api.html#case-5-bad-request) | `"error"` | 400 | The request input is incorrect / malformed. More details available in `message` key |
-| [Unauthorized](/device-connect/insights-api.html#case-6-unauthorized) | `"error"` | 403 | This happens in case SERVER_API_KEY is incorrect or IP address in not whitelisted |
-| [Internal Server Error](/device-connect/insights-api.html#case-6-unauthorized) | `"error"` | 5xx | The request processing failed because of some internal error. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. If the issue persists, please contact support |
-| [Rate Limit Exceeded](/device-connect/insights-api.html#case-8-rate-limit-exceeded) | `"error"` | 429 | This happens in case the maximum allowed rate limit on API exceeds. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. Contact FinBox to know your rate limits.|
+| [Calculation complete and data is available](/device-connect/insights-api#case-2-calculation-complete-and-data-is-available) | `"complete"` | 200 | The request input is correct and processing has completed. Response contains the predictors |
+| [Calculation complete and data is unavailable](/device-connect/insights-api#case-3-calculation-complete-and-data-is-unavailable) | `"no_data"` | 200 | The request input is correct and processing has completed but response contains no predictors because of lack of data from user's device |
+| [Data fetch for request Id before webhook callback or after 24 hours](/device-connect/insights-api#case-4-data-fetch-for-request-id-before-webhook-callback-or-after-24-hours) | `"webhook_not_found"` | 200 | The request has no data assosciated with it because the request id was never sent from webhook callback or it is deleted because 24 hours passed from when it was sent |
+| [Invalid customer ID](/device-connect/insights-api#case-4-invalid-customer-id) | `"not_found"` | 200 | User does not exist in FinBox system |
+| [Bad request](/device-connect/insights-api#case-5-bad-request) | `"error"` | 400 | The request input is incorrect / malformed. More details available in `message` key |
+| [Unauthorized](/device-connect/insights-api#case-6-unauthorized) | `"error"` | 403 | This happens in case SERVER_API_KEY is incorrect or IP address in not whitelisted |
+| [Internal Server Error](/device-connect/insights-api#case-6-unauthorized) | `"error"` | 5xx | The request processing failed because of some internal error. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. If the issue persists, please contact support |
+| [Rate Limit Exceeded](/device-connect/insights-api#case-8-rate-limit-exceeded) | `"error"` | 429 | This happens in case the maximum allowed rate limit on API exceeds. In this case, please retry twice with an exponential backoff i.e. retry after 2 seconds, then retry after 5 seconds. Contact FinBox to know your rate limits.|
 
 ::: danger IMPORTANT
 In case your are running a daily CRON that fetches data using insights API, ensure you are not breaching the rate limit. Please contact FinBox to know your rate limits.
