@@ -250,17 +250,17 @@ DevDocOverview:{"Developer Documentation":[
 
   {
     type: 'link',
-    label: 'Embedded Finance Documentation',
+    label: 'Embedded Finance',
     href: '/embedded-finance',
   },
   {
     type: 'link',
-    label: 'DeviceConnect Documentation',
+    label: 'DeviceConnect',
     href: '/device-connect',
   },
   {
     type: 'link',
-    label: 'BankConnect Documentation',
+    label: 'BankConnect',
     href: '/bank-connect',
   },
  
