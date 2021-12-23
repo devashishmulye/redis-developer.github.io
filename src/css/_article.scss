@@ -2,12 +2,12 @@
   --ifm-menu-link-padding-vertical: 5px;
   --ifm-menu-link-padding-horizontal: 15px;
   --ifm-menu-color: var(--black);
-  --ifm-menu-color-active: #5961ff;
+  --ifm-menu-color-active: var(--green);
   --ifm-menu-color-background-active: var(--violet-light);
   // --ifm-menu-color-background-hover: var(--violet-light);
   --ifm-toc-border-color: #e5e5e5;
 
-  --ifm-link-color: #5961ff;
+  --ifm-link-color: var(--green);
 
   --ifm-hr-border-color: var(--grey-light);
   --ifm-hr-border-width: 1px;
@@ -24,7 +24,7 @@
   --ifm-blockquote-color: var(--black);
 
   --ifm-tabs-color: var(--black);
-  --ifm-tabs-color-active: #5961ff;
+  --ifm-tabs-color-active: var(--green);
 
   --ifm-code-color: var(--black);
 }

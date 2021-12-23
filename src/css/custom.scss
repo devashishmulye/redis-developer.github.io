@@ -49,12 +49,12 @@
   --ifm-transition-timing-default: ease-in-out;
 
   --ifm-global-radius: 10px;
-  --ifm-link-color: #5961ff;
+  --ifm-link-color: var(--green);
 
   // custom
   --green: #24ca7a;
   --yellow: #e7c000;
-  --link: #5961ff;
+  --link: var(--green);
 }
 
 html[data-theme="dark"] {
