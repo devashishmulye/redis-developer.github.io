@@ -140,7 +140,8 @@ html[data-theme="dark"] {
   height: 100%;
 }
 
-.sidebar_src-theme-DocSidebar- {
+.sidebar_src-theme-DocSidebar-,
+.sidebar_25T_ {
   background: #f4f4f4;
   // padding-top: 10px;
 }
@@ -173,6 +174,4 @@ html[data-theme="dark"] {
 .menu__link--sublist {
   background: #f4f4f4 !important;
   border-radius: 0px;
-
 }
-
