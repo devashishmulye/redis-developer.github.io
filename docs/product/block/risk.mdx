@@ -8,48 +8,45 @@ hide_table_of_contents: false
 import RedisCard from "@site/src/theme/RedisCard";
 import CenteredImage from "@site/src/theme/Images/CenteredImage";
 
-
-At its core, lending is how well you manage and assess risk. Good risk assessment not only helps you collect debt, it helps you approve more customers, improves your margin, and enables you to improve the terms of credit for your end user.
-
-When lenders underwrite a customer, they assess him along two parameters - 
-
-* **Capability to Pay** - Users capability to pay is analysed based on their credit score, bank transactions, income and expenses, and other credit history.
-* **Intent to Pay** - Based on borrowers' engagement on Anchor app and previous repayment history their intent to pay is detemined.
-
+<!--
 <CenteredImage  imgSrc={"/img/risk-assessment.png" } text=" " imgWidth="205%"/>
+-->
 
-There are two ways of assessing credit-worthiness
+## What is risk?
 
-* Traditional Underwriting based on the Credit History)
-* Alternate Data Underwriting
+In lending, risk refers to the possibility of borrowers’ failure to repay their loan, resulting in a loss for the lender. Lenders lose money because cash flows get interrupted and collection costs shoot up. Some common forms of credit risk include default, fraud, regulations, risks from the market, competition, the economy and the government.
+
+## How is it measured?
+
+Lenders measure risk by taking into account borrowers’ credit histories, capital, repayment ability and the condition of the loan and its collaterals. 
+
+## Why risk assessment is broken
+
+* **Short-sighted credit scores** - Credit bureau scores used widely by lenders fail to account for several factors pertinent to borrowers’ ability and intent to repay loans. Moreover, these scores are dated and fail to show customer creditworthiness transparently.
+
+* **Biases in lending** - Historical credit decisioning data is riddled with biases around gender, pincodes and more. This leaves out large numbers of creditworthy borrowers and allows exclusionary financial practices to fester.
+
+## How you can use FinBox to overhaul risk assessment
+
+* **DeviceConnect** - [FinBox DeviceConnect](/product/products/device-connect) takes cues from customers’ device data to determine the repayment intent and ability of customers. It categorizes customers into various buckets based on this data and communicates these insights to lenders a week before the due date.
+
+* **BankConnect** - [FinBox BankConnect](/product/products/bank-connect) product helps customers seamlessly offer access to their bank statements for analysis. The analyzer gives you insight into the cash flows of the borrower for underwriting purposes.
+
+* **Account Aggregator** - FinBox Account Aggregator can enable platforms to access data from financial institutions after explicit user consent. This added layer of insights strengthens our underwriting stack to deliver more accurate results.
+
+* **RiskEngine** - [FinBox RiskEngine](/products/product/risk-engine) combines insights from its DeviceConnect and BankConnect products with data sourced from Account Aggregators, cash flow data, GST data and platform data for a well-rounded credit risk assessment.
 
 
+## Benefits
 
+* **Lower fraud** - FinBox helps you reduce the instance of fraud by X% by covering blindspots during onboarding as well as collections.
 
-## FinBox Alternate Data Underwriting suite:
+* **More approvals** - Lend to 25% more customers as FinBox gathers data on more thin-file, new-to-credit customers than traditional assessment measures.
 
-Our products [DeviceConnect](/product/products/device-connect) and [BankConnect](/product/products/bank-connect) provides us the alternate data to underwrite.
+* **Less defaults** - Lower your instance of default by 30% with real-time data monitoring in our risk prioritization and early warning systems.
 
+* **Collection intelligence** - Gain access to enriched data insights well before the due date to tailor your collections efforts accordingly for lower defaults.
 
-* [DeviceConnect](/product/products/device-connect)
-* [BankConnect](/product/products/bank-connect)
+* **Easy integration** - FinBox’s risk engine can be integrated into your existing loan journeys, seamlessly. 
 
-## What is a credit policy?
-
-A set of rules decided by a financial institution that measures the creditworthiness of a borrower and determines whether to approve the loan.
-
-
-
-## How we assess New-to-Credit Customers
-NTC Customers do not have a credit history, therefore financial institutions are unable to underwrite them.
-They however own rich alternate data in the form of their digital footprint. 
-
-We get this alternate data using [DeviceConnect](/product/products/device-connect) (device data), [BankConnect](/product/products/bank-connect) (Bank Statements), GST Data and also transaction data from our partners.
-
-## Risk based pricing
-
-A credit limit is set for users based on their credit history, bureau score, and credit score. We do not live large ticket loans to users with low credit score.
-
-## Fraud Management
-
-DeviceConnect helps lenders identify fraudulent applications earlier in the loan cycle, thereby optimizing the loan funnel and equalizing interest rates, i.e., lower interest rates for good borrowers and higher for high-risk ones.
+* **Improved customer experience** - We not only make it easy for you to deploy our risk engine within your platform, but also allow your customers to share their relevant underwriting and identification documents without interrupting the journey.
