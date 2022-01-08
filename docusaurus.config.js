@@ -51,31 +51,31 @@ module.exports = {
       items: [
         {
           to: '/',
-          label: 'Home',
+          label: 'Product Documentation',
           position: 'left',
         },
 
         {
-          to: '/dev/docs',
+          to: '/dev',
           label: 'Developer Documentation',
           position: 'left',
         },
 
-        {
-          to: '/bank-connect/',
-          label: 'BankConnect',
-          position: 'left',
-        },
-        {
-          to: '/device-connect/',
-          label: 'DeviceConnect',
-          position: 'left',
-        },
-        {
-          to: '/embedded-finance/',
-          label: 'Embedded Finance Platform',
-          position: 'left',
-        },
+        // {
+        //   to: '/bank-connect/',
+        //   label: 'BankConnect',
+        //   position: 'left',
+        // },
+        // {
+        //   to: '/device-connect/',
+        //   label: 'DeviceConnect',
+        //   position: 'left',
+        // },
+        // {
+        //   to: '/embedded-finance/',
+        //   label: 'Embedded Finance Platform',
+        //   position: 'left',
+        // },
     
       ],
     },
