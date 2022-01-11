@@ -190,8 +190,8 @@ module.exports = {
           {
             redirects: [
               {
-                to: '/docs/newDocPath', // string
-                from: ['/docs/oldDocPathFrom2019', '/docs/legacyDocPathFrom2016'], // string | string[]
+                to: '/docs/embedded-finance/', // string
+                from: ['/docs/middleware/',], // string | string[]
               },
             ],
           },
