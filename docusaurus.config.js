@@ -3,7 +3,7 @@ const path = require('path')
 
 module.exports = {
   title: 'FinBox Developer Documentation',
-  tagline: 'The central place for building your credit program',
+  tagline: 'The central place for building your credit programme',
   url: 'https://docs.finbox.in',
   baseUrl: '/',
   onBrokenLinks: 'warn',

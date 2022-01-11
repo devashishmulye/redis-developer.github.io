@@ -55,7 +55,7 @@ Each of the objects in the `data` key has the following keys:
 - **device_id**: A unique identifier for each device a user has logged into.
 - **last_opened**: Last time the user opened the app on this device.
 - **created**: UTC time of when the device_id was created.
-- **mobile_model**: A clean human-readable name of the model of the device from which the data is collected. Can be displayed to the user. Not suitable to be used in a program.
+- **mobile_model**: A clean human-readable name of the model of the device from which the data is collected. Can be displayed to the user. Not suitable to be used in a programme.
 - **app_open_count**: The count of invocation of the `createUser` method in the DeviceConnect Android SDK (Refer [here](/device-connect/android#create-user-method)). It is a directional indicator of the number of times the customer has opened the app, though not necessarily the exact number (depends on your Android integration).
 - **given_permissions**: The permissions granted by the user on the device. It can have following values in the list:
     - `sms_permission`
