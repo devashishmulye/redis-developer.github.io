@@ -184,6 +184,19 @@ module.exports = {
   ],
   plugins: [
     'docusaurus-plugin-sass', path.resolve(__dirname, 'plugins', 'gtm'),
-    'plugin-image-zoom'
+    'plugin-image-zoom',
+        // [
+        //   '@docusaurus/plugin-client-redirects',
+        //   {
+        //     redirects: [
+        //       {
+        //         to: '/embedded-finance/', // string
+        //         from: '/docs/middleware/' // string
+        //       },
+        //     ],
+        //   },
+        // ],
   ],
 };
+
+
