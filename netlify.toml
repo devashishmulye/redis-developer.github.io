@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "https://docs.finbox.in/middleware/"
+  to = "/embedded-finance/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
