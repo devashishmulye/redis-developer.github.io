@@ -205,7 +205,9 @@ ProductOverview: { 'FinBox Overview' : [
     ]
   },
   'pm-checklist',
-  {
+  'get-started',
+  "go-live" , 
+{
     type: 'link',
     label: 'Developer Documentation',
     href: '/dev',
