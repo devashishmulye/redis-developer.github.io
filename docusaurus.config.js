@@ -53,6 +53,7 @@ module.exports = {
           to: '/',
           label: 'Product Documentation',
           position: 'left',
+          activeBaseRegex: '/$'
         },
 
         {
