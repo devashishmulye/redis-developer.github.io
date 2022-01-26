@@ -1,5 +1,7 @@
 import React from "react";
-import "./Login.css";
+import styles from './styles.css';
+
+
 import {
   Link,
   Route,
@@ -27,12 +29,15 @@ class Login extends React.Component {
     if (this.state.password == input) {
       this.setState({ isAuthenticated: true });
     }
-    this.refs["password"].value = "";
+    else alert(message="wrong password");
+    this.refs["password"].value = "";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+    return isAuthenticated;
   }
-  secretData() {
-    if (this.state.isAuthenticated)
-      this.props.history.push("/embedded-finance");
-  }
+  // secretData() {
+  //   if (this.state.isAuthenticated)
+  //     this.props.history.push("/embedded-finance");
+  // }                                                                                                                                                                                   
 
   // matchPath = function() {
   //   let { path, url } = useRouteMatch();
@@ -43,7 +48,7 @@ class Login extends React.Component {
   render() {
     return (
       <>
-        <div className="login-wrapper">
+        <div className="login-wrapper" style={{background:green}}>
           <form>
             <label>
               <p>Password</p>
@@ -63,4 +68,9 @@ class Login extends React.Component {
 //               ReactDOM.render(<Login msg={msg} pw={pw} />,
 //                 document.getElementById("my-app"));            }
 
+
+
+
 export default Login;
+
+
